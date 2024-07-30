@@ -22,5 +22,14 @@ function fadeOut() {
   const hidden = document.querySelector('.hidden');
   hidden.style.opacity = '0';
   hidden.style.transition = 'opacity 3000ms ease-in-out 3000ms';
+  setTimeout(deleteElement, 6000);
 }
+
+//ローディング要素削除
+function deleteElement() {
+  const hidden = document.querySelector('.hidden');
+  document.body.removeChild(hidden);
+}
+
+
 
