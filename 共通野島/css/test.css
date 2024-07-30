@@ -66,6 +66,11 @@ h2.common {
     padding-right: 0.5em;
 }
 
+.breadcrumb a {
+    text-decoration: none;
+    color: #000;
+}
+
 
 /* モーダル共通 */
 
