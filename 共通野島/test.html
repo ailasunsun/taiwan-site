@@ -3,10 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../common/css/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/test.css">
     <title>Document</title>
@@ -14,51 +15,58 @@
 
 <body>
     <!-- 共通見出し -->
-    <h2 class="common">Text<span class="subtitle">テキスト</span></h2>
+    <div class="box">
+        <h2 class="common">Text<span class="subtitle">テキスト</span></h2>
+    </div>
 
     <!-- 共通パンくずリスト -->
-    <nav>
-        <ol class="breadcrumb">
-            <li><a href="top/index.html">Top</a></li>
-            <li>&gt;２層目</li>
-            <!--↑”２層目”のテキストを該当ページの名前に書き換えてください  -->
-        </ol>
-    </nav>
+    <div class="box">
+        <nav>
+            <ol class="breadcrumb">
+                <li><a href="top/index.html">Top</a></li>
+                <li>&gt;２層目</li>
+                <!--↑”２層目”のテキストを該当ページの名前に書き換えてください  -->
+            </ol>
+        </nav>
+    </div>
 
-    <!-- モーダル夜市用ボタン -->
-    <button type="button" id="market_btn" name="button">夜市ウィンドウ</button>
 
-    <!-- モーダルウィンドウ　夜市 -->
-    <div class="modal_container" id="modal_marketbox">
-        <!-- <div class="modal_container"> -->
-        <span class="close_btn"><img src="../common/image/icon_close.svg" alt=""></span>
-        <h3 class="modal_name">寧夏夜市</h3>
-        <p class="modal_market"><img src="image/taipei_modal1.jpg" alt="night_market1"></p>
-        <div class="mordal_text">
-            <p class="market_detail">
-                寧夏路夜市は台湾伝統の屋台料理やB級グルメがメインの夜市です。特に大同区の圓環付近には懐かしいグルメがたくさん集まっているので、思う存分味わいましょう。また、ここの夜市は歩道と車道が分かれているので、食事やショッピングに便利です。食の夜市とも言われる寧夏路夜市には毎日、大勢の人々が訪れています。
-            </p>
-            <p class="market_time">営業時間：17:00 〜 25:00</p>
+    <div class="box">
+        <!-- モーダル夜市用ボタン -->
+        <button type="button" id="market_btn" name="button">夜市ウィンドウ</button>
+        <!-- モーダルウィンドウ　夜市 -->
+        <div class="modal_container" id="modal_marketbox">
+            <span class="modal_close" id="close_btn"><img src="../common/image/icon_close.svg" alt=""></span>
+            <h3 class="modal_name">寧夏夜市</h3>
+            <p class="modal_market"><img src="image/taipei_modal1.jpg" alt="night_market1"></p>
+            <div class="mordal_text">
+                <p class="market_detail">
+                    寧夏路夜市は台湾伝統の屋台料理やB級グルメがメインの夜市です。特に大同区の圓環付近には懐かしいグルメがたくさん集まっているので、思う存分味わいましょう。また、ここの夜市は歩道と車道が分かれているので、食事やショッピングに便利です。食の夜市とも言われる寧夏路夜市には毎日、大勢の人々が訪れています。
+                </p>
+                <p class="market_time">営業時間：17:00 〜 25:00</p>
+            </div>
         </div>
     </div>
 
-    <!-- モーダルウィンドウ　文化施設 -->
+    <div class="box">
+        <!-- モーダル文化施設用ボタン -->
+        <button type="button" id="cultural_btn" name="button">営業時間を見る<img src="image/rectangle.png"
+                alt="triangle"></button>
 
-    <button type="button" id="cultural_btn" name="button">営業時間を見る<img src="image/rectangle.png" alt="triangle"></button>
+        <!-- モーダルウィンドウ　文化施設 -->
 
-    <div class="modal_container" id="mordal_cultural">
-        <!-- <div class="modal_container"> -->
-        <span class="close_btn"><img src="../common/image/icon_close.svg" alt=""></span>
-
-        <h3 class="modal_name">新天地西洋博物館</h3>
-        <p class="modal_image">
-            <img src="image/taichung_modal1.jpg" alt="cultural__archtecture1">
-            <img src="image/taichung_modal2.jpg" alt="cultural__archtecture2">
-        </p>
-        <p class="mordal_text">営業時間：10:00〜18:00<br>住所：台中市東区旱渓東路一段456号1階</p>
-
-
+        <div class="modal_container" id="mordal_culturalbox">
+            <span class="modal_close" id="close_culture1"><img src="../common/image/icon_close.svg" alt=""></span>
+            <h3 class="modal_name">新天地西洋博物館</h3>
+            <p class="modal_image">
+                <img src="image/taichung_modal1.jpg" alt="cultural__archtecture1">
+                <img src="image/taichung_modal2.jpg" alt="cultural__archtecture2">
+            </p>
+            <p class="mordal_text">営業時間：10:00〜18:00<br>住所：台中市東区旱渓東路一段456号1階</p>
+        </div>
     </div>
+
+    <script src="js/test.js"></script>
 </body>
 
 </html>
