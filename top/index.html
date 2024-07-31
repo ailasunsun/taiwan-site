@@ -9,12 +9,118 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="../common/css/common.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Taiwan-Site</title>
+    <title>トップページ</title>
 </head>
 
 <body>
-    <p>Topページです</p>
+    <section class="hero">
+        <h1><img src="../common/image/logo.png" alt="taiwan_logo"></h1>
+        <p id="icon_drawer"><img src="../common/image/icon_drawer.svg" alt=""></p>
+    </section>
+    <!-- Formosa -->
+    <section class="intro">
+        <div class="intro_cont1">
+            <p class="flag"><img src="../common/image/flag.jpg" alt="national_flag"></p>
+            <h2 class="intro_title">Formosa</h2>
+            <h2 class="intro_subtitle">フォルモサ（麗しの島）</h2>
+            <p class="formosa_img"><img src="image/top_formosa01.jpg" alt="foramosa1"></p>
+        </div>
+        <div class="intro_cont2">
+            <p class="lead">フォルモサは、十六世紀にポルトガル人がエメラルド色の美しい台湾を見つけて発した賛嘆の言葉です。緑にあふれた台湾の美しい風景が、あなたを桃源郷の世界へといざなってくれるでしょう。</p>
+            <p class="formosa_img"><img src="image/top_formosa02.jpg" alt="formosa2"></p>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery">
+        <h2 class="common">Gallery<span class="subtitle">ギャラリー</span></h2>
+        <div class="slider_container">
+            <div class="slider_image">
+                <img src="image/top_slider01.jpg
+                " alt="slider1">
+            </div>
+            <div class="slider_indicator">
+                <ol class="indicator">
+                    <li>0</li>
+                    <li>0</li>
+                    <li>0</li>
+                    <li>0</li>
+                    <li>0</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+    <!-- Travel -->
+    <section class="travel">
+        <h2 class="common">Travel<span class="subtitle">おすすめスポット</span></h2>
+        <p class="lead">
+            訪れた人々を魅了する「美麗島」台湾。そんな台湾の人気スポットを代表する地を３つのエリアでご紹介します。様々な風景に誰もが魅了されるでしょう。
+        </p>
+        <div class="map">
+            <a href="../taipei/index.html" id="taipei">台北</a>
+            <a href="../taichung/index.html" id="taichung">台中</a>
+            <a href="../tainan/index.html" id="tainan">台南</a>
+        </div>
+    </section>
+    <!-- Event -->
+    <section class="event">
+        <h2 class="common">Event<span class="subtitle">おすすめイベント</span></h2>
+        <section class="event_detail">
+            <h3>台湾ランタンフェスティバル</h3>
+            <p class="event_img"><img src="image/top_event01.jpg" alt="event1"></p>
+            <p class="date"><span class="bold">開催期間</span>　春節 旧暦元日（2月24日～3月2日）</p>
+            <p class="lead">春節の風習として「天燈」と呼ばれる紙製のランタンに無病息災などの祈りを書き込み、火種を用いて熱気球と同じ原理で空に飛ばす儀式です。吉祥や邪気払いの意味があります。</p>
+        </section>
+        <section class="event_detail">
+            <h3>台北最High新年城
+                カウントダウンパーティー</h3>
+            <p class="event_img"><img src="image/top_event02.jpg" alt="event2"></p>
+            <p class="date"><span class="bold">開催期間</span>12月31日～1月1日</p>
+            <p class="lead">台北101では毎年、元旦0時から約3分間、ビルを覆い尽くすように新年を祝う花火が舞い上がります。世界中から注目されるイベントの一つです。</p>
+        </section>
+    </section>
+    <!-- Information -->
+    <section class="info">
+        <h2 class="common">台湾基本情報</h2>
+        <ul class="basic_info">
+            <li>国名：中華民国・台湾</li>
+            <li>首都：台北</li>
+            <li>人口：約2,300万人</li>
+            <li>面積：約3万6,000km²</li>
+            <li>人種・民族：漢民族、先住民</li>
+            <li>宗教：仏教、道教、キリスト教、その他</li>
+            <li>言語：北京語、台湾語</li>
+            <li>通貨：元（ニュー台湾ドル）</li>
+            <li>時差：1時間</li>
+            <li>台湾の気候・服装：</li>
+            <li class="list_text">
+                亜熱帯に属し一年を通して温暖な台湾。しかし北回帰線から南は熱帯で暑く、北部は大陸性気候の影響を受けて冷え込むこともあります。地域差を考慮して服装を準備しましょう。
+            </li>
+            <li>台湾の祝祭日：</li>
+        </ul>
+        <dl class="holiday">
+            <dt>正月</dt>
+            <dd>1月1日</dd>
+            <dt>端午節</dt>
+            <dd>6月22日</dd>
+            <dt>春節</dt>
+            <dd>1月20日～29日</dd>
+            <dt>中秋節</dt>
+            <dd>9月29日</dd>
+            <dt>平和記念日</dt>
+            <dd>2月28日</dd>
+            <dt>国慶節</dt>
+            <dd>10月10日</dd>
+            <dt>清明節</dt>
+            <dd>4月5日</dd>
+        </dl>
+    </section>
+
+
+    <script src="../common/js/pagetop.js"></script>
+    <script src="js/top.js"></script>
 </body>
 
 </html>
