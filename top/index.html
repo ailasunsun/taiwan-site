@@ -9,28 +9,32 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="../common/css/common.css">
     <link rel="stylesheet" href="css/style.css">
     <title>トップページ</title>
 </head>
 
 <body>
-    <div class="hero">
-        <h1><img src="../common/image/logo.png" alt="Taiwan"></h1>
-        <p><img src="../common/image/icon_drawer.svg" alt=""></p>
-        <p>Topページです</p>
-    </div>
+    <section class="hero">
+        <h1><img src="../common/image/logo.png" alt="taiwan_logo"></h1>
+        <p id="icon_drawer"><img src="../common/image/icon_drawer.svg" alt=""></p>
+    </section>
     <!-- Formosa -->
-    <div class="intro">
-        <h2 class="intro">Formosa</h2>
-        <h2 class="intro_subtitle">フォルモサ（麗しの島）</h2>
-        <p><img src="../common/image/flag.jpg" alt="national_flag"></p>
+    <section class="intro">
+        <div class="intro_cont1">
+            <p class="flag"><img src="../common/image/flag.jpg" alt="national_flag"></p>
+            <h2 class="intro_title">Formosa</h2>
+            <h2 class="intro_subtitle">フォルモサ（麗しの島）</h2>
+            <p class="formosa_img"><img src="image/top_formosa01.jpg" alt="foramosa1"></p>
+        </div>
+        <div class="intro_cont2">
+            <p class="lead">フォルモサは、十六世紀にポルトガル人がエメラルド色の美しい台湾を見つけて発した賛嘆の言葉です。緑にあふれた台湾の美しい風景が、あなたを桃源郷の世界へといざなってくれるでしょう。</p>
+            <p class="formosa_img"><img src="image/top_formosa02.jpg" alt="formosa2"></p>
+        </div>
+    </section>
 
-        <p><img src="image/top_formosa01.jpg" alt="foramosa1"></p>
-        <p class="lead">フォルモサは、十六世紀にポルトガル人がエメラルド色の美しい台湾を見つけて発した賛嘆の言葉です。緑にあふれた台湾の美しい風景が、あなたを桃源郷の世界へといざなってくれるでしょう。</p>
-        <p><img src="image/top_formosa02.jpg" alt="foramosa2"></p>
-    </div>
     <!-- Gallery -->
-    <div class="gallery">
+    <section class="gallery">
         <h2 class="common">Gallery<span class="subtitle">ギャラリー</span></h2>
         <div class="slider_container">
             <div class="slider_image">
@@ -47,9 +51,9 @@
                 </ol>
             </div>
         </div>
-    </div>
+    </section>
     <!-- Travel -->
-    <div class="travel">
+    <section class="travel">
         <h2 class="common">Travel<span class="subtitle">おすすめスポット</span></h2>
         <p class="lead">
             訪れた人々を魅了する「美麗島」台湾。そんな台湾の人気スポットを代表する地を３つのエリアでご紹介します。様々な風景に誰もが魅了されるでしょう。
@@ -59,9 +63,9 @@
             <a href="../taichung/index.html" id="taichung">台中</a>
             <a href="../tainan/index.html" id="tainan">台南</a>
         </div>
-    </div>
+    </section>
     <!-- Event -->
-    <div class="event">
+    <section class="event">
         <h2 class="common">Event<span class="subtitle">おすすめイベント</span></h2>
         <section class="event_detail">
             <h3>台湾ランタンフェスティバル</h3>
@@ -72,14 +76,13 @@
         <section class="event_detail">
             <h3>台北最High新年城
                 カウントダウンパーティー</h3>
-            <p class="event_img"><img src="image/top_event02.jpg alt=" event2"></p>
+            <p class="event_img"><img src="image/top_event02.jpg" alt="event2"></p>
             <p class="date"><span class="bold">開催期間</span>12月31日～1月1日</p>
             <p class="lead">台北101では毎年、元旦0時から約3分間、ビルを覆い尽くすように新年を祝う花火が舞い上がります。世界中から注目されるイベントの一つです。</p>
         </section>
-
-    </div>
+    </section>
     <!-- Information -->
-    <div class="info">
+    <section class="info">
         <h2 class="common">台湾基本情報</h2>
         <ul class="basic_info">
             <li>国名：中華民国・台湾</li>
@@ -96,17 +99,28 @@
                 亜熱帯に属し一年を通して温暖な台湾。しかし北回帰線から南は熱帯で暑く、北部は大陸性気候の影響を受けて冷え込むこともあります。地域差を考慮して服装を準備しましょう。
             </li>
             <li>台湾の祝祭日：</li>
-            <li class="list_text">正月1月1日</li>
-            <li class="list_text">端午節6月22日</li>
-            <li class="list_text">春節1月20日～29日</li>
-            <li class="list_text">中秋節9月29日</li>
-            <li class="list_text">平和記念日2月28日</li>
-            <li class="list_text">国慶節10月10日</li>
-            <li class="list_text">清明節4月5日</li>
         </ul>
+        <dl class="holiday">
+            <dt>正月</dt>
+            <dd>1月1日</dd>
+            <dt>端午節</dt>
+            <dd>6月22日</dd>
+            <dt>春節</dt>
+            <dd>1月20日～29日</dd>
+            <dt>中秋節</dt>
+            <dd>9月29日</dd>
+            <dt>平和記念日</dt>
+            <dd>2月28日</dd>
+            <dt>国慶節</dt>
+            <dd>10月10日</dd>
+            <dt>清明節</dt>
+            <dd>4月5日</dd>
+        </dl>
+    </section>
 
 
-    </div>
+    <script src="../common/js/pagetop.js"></script>
+    <script src="js/top.js"></script>
 </body>
 
 </html>
