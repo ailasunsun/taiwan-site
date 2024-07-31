@@ -3,3 +3,67 @@
 * {
     font-family: 'Zen Kaku Gothic New', sans-serif;
 }
+
+/* ヘッダー領域 */
+.hero {
+    min-width: 375px;
+    height: 667px;
+    background: url(../image/top_bg_sp.jpg) top center/cover;
+    padding-top: 160px;
+}
+
+#icon_drawer {
+    width: 48px;
+    height: 48px;
+    position: fixed;
+    top: 8px;
+    right: 8px;
+}
+
+h1 {
+    margin: 0 auto;
+    width: 335px;
+}
+
+h1 img {
+    height: 135px;
+    width: 335px;
+    text-align: center;
+}
+
+/* 紹介 */
+.intro_cont1 {
+    text-align: center;
+    background: url(../image/top_formosa01.jpg) top center/cover;
+    padding-top: 60px;
+}
+
+.flag {
+    margin-bottom: 40px;
+}
+
+p.flag img {
+    width: 35px;
+    height: 24px;
+    margin: 0 auto;
+}
+
+.intro_title {
+    font-size: 20px;
+    margin: 0 auto 20px;
+
+}
+
+.intro_subtitle {
+    font-size: 12px;
+    display: inline-block;
+    margin: 0 auto;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #000;
+}
+
+.formosa_img {
+    width: 335px;
+    height: 180px;
+    margin: 20px auto 60px;
+}
