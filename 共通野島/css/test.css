@@ -59,21 +59,30 @@ h2.common {
     display: flex;
     list-style: none;
     font-size: 16px;
+    color: #000;
 }
 
 .breadcrumb li {
     padding-right: 0.5em;
 }
 
+.breadcrumb a {
+    text-decoration: none;
+    color: #000;
+}
+
 
 /* モーダル共通 */
 
-#modal_market,
-#mordal_cultural {
+.modal_container {
     width: 375px;
     height: 667px;
     background-color: #0180BE;
     position: relative;
+}
+
+#modal_marketbox,
+#mordal_cultural {
     display: none;
 }
 
@@ -109,6 +118,7 @@ h3.modal_name {
     background-color: #fff;
     font-weight: 700;
     border: none;
+    cursor: pointer;
 }
 
 /* モーダルウィンドウ　夜市 */
@@ -135,6 +145,7 @@ h3.modal_name {
     border: 2px solid #0180BE;
     padding: 0;
     background-color: transparent;
+    cursor: pointer;
 }
 
 #cultural_btn img {
