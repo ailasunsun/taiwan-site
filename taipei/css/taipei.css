@@ -1,6 +1,10 @@
 @charset "UTF-8";
 
 /* 共通 */
+* {
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+}
+
 body {
   background-color: #f4f4f4;
   height: 100vh;
@@ -20,15 +24,6 @@ p {
   line-height: 1.6;
 }
 
-.imageLine {
-  display: flex;
-  justify-content: space-between;
-}
-
-.imageLine img {
-  width: 47%;
-}
-
 /* 共通部分リセット */
 /* 後で消すかも */
 .box {
@@ -37,17 +32,18 @@ p {
   padding: 0;
 }
 
-/* ヘッダー */
-header {
+/* hero */
+.hero {
+  min-width: 375px;
   background: url(../image/header_sp.jpg) no-repeat center top/cover;
 }
 
-header .title {
+.hero .title {
   width: 199px;
   margin: auto;
 }
 
-header img {
+.hero img {
   height: 372px;
   margin: 120px 0 175px;
 }
@@ -57,7 +53,7 @@ header img {
   justify-content: right;
 }
 
-header p {
+.hero p {
   width: 247px;
   color: #fff;
   padding-bottom: 8px;
@@ -85,4 +81,75 @@ h2 {
   margin: 20px 0;
   padding: 20px 16px;
   background-color: rgba(108, 186, 219, 0.2);
+}
+
+.imageLine {
+  display: flex;
+  justify-content: space-between;
+}
+
+.imageLine img {
+  width: 47%;
+}
+
+.attraction .point {
+  width: 295px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1;
+  padding: 8px 0;
+}
+
+
+.attraction .point span {
+  display: block;
+  padding-top: 8px;
+}
+
+time {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.line {
+  width: 60%;
+  border-bottom: 2px solid #000;
+  margin: 40px auto;
+}
+
+/* nightMarket */
+.nightMarket p {
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  padding: 16px 0;
+  margin-bottom: 20px;
+}
+
+.nightMarket .modalButton {
+  background-color: #fff;
+  width: 275px;
+  height: 126px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  /* 後で消す */
+}
+
+.nightMarket button {
+  background-image: url(../../taipei/image/nightmarket03_button.png);
+  background-size: cover;
+  width: 134px;
+  height: 58px;
+  background-color: transparent;
+  font-weight: 700;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+#market_btn {
+  background-image: url(../../taipei/image/nightmarket03_button.png);
 }
