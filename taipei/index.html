@@ -18,11 +18,11 @@
 
 <body>
     <!-- ローディング用HTMLここから -->
-    <div id="loading">
+    <!-- <div id="loading">
         <img src="../common/image/logo.svg" alt="logo" id="logo">
     </div>
 
-    <script src="js/top.js"></script>
+    <script src="js/top.js"></script> -->
     <!-- ここまで -->
 
     <div class="hero">
@@ -54,8 +54,13 @@
             <img src="image/attraction03.png" alt="">
         </div>
 
-        <p class="point">幻想的な夕暮れがねらい目<br><time>15:00</time>～<time>19:00</time></p>
+        <p class="point">幻想的な夕暮れがねらい目<br>
+            <span>
+                <time>15:00</time>～<time>19:00</time>
+            </span>
+        </p>
 
+        <div class="line"></div>
 
         <h3 class="term">台北101</h3>
         <img src="image/attraction04.jpg" alt="">
@@ -67,7 +72,9 @@
         </div>
 
         <p class="point">展望台営業時間帯<br>
-            <time>11:00</time>～<time>19:00</time>
+            <span>
+                <time>11:00</time>～<time>19:00</time>
+            </span>
         </p>
     </section>
 
@@ -82,74 +89,14 @@
         <img src="image/nightmarket01_sp.jpg" alt="">
 
         <!-- ★モーダル後で見直す -->
-        <div class="box">
-            <!-- モーダル夜市用ボタン -->
+        <div class="modalButton">
             <button type="button" id="market_btn" name="button">寧夏夜市</button>
-            <!-- モーダルウィンドウ　夜市 -->
-            <div class="modal_container" id="modal_marketbox">
-                <span class="modal_close" id="close_btn"><img src="../common/image/icon_close.svg" alt=""></span>
-                <h3 class="modal_name">寧夏夜市</h3>
-                <p class="modal_market"><img src="../common/image/taipei_modal1.jpg" alt="night_market1"></p>
-                <div class="mordal_text">
-                    <p class="market_detail">
-                        寧夏路夜市は台湾伝統の屋台料理やB級グルメがメインの夜市です。特に大同区の圓環付近には懐かしいグルメがたくさん集まっているので、思う存分味わいましょう。また、ここの夜市は歩道と車道が分かれているので、食事やショッピングに便利です。食の夜市とも言われる寧夏路夜市には毎日、大勢の人々が訪れています。
-                    </p>
-                    <p class="market_time">営業時間：17:00 〜 25:00</p>
-                </div>
-            </div>
+            <button type="button" id="market_btn2" name="button">饒河街観光夜市</button>
+            <button type="button" id="market_btn3" name="button">士林夜市</button>
+            <button type="button" id="market_btn4" name="button">通化夜市</button>
         </div>
 
-        <div class="box">
-            <!-- モーダル夜市用ボタン -->
-            <button type="button" id="market1_btn" name="button">饒河街観光夜市</button>
-            <!-- モーダルウィンドウ　夜市 -->
-            <div class="modal_container" id="modal_marketbox1">
-                <span class="modal_close" id="close_btn1"><img src="../common/image/icon_close.svg" alt=""></span>
-                <h3 class="modal_name">饒河街観光夜市</h3>
-                <p class="modal_market"><img src="../common/image/" alt="night_market1"></p>
-                <div class="mordal_text">
-                    <p class="market_detail">
-                        寧夏路夜市は台湾伝統の屋台料理やB級グルメがメインの夜市です。特に大同区の圓環付近には懐かしいグルメがたくさん集まっているので、思う存分味わいましょう。また、ここの夜市は歩道と車道が分かれているので、食事やショッピングに便利です。食の夜市とも言われる寧夏路夜市には毎日、大勢の人々が訪れています。
-                    </p>
-                    <p class="market_time">営業時間：17:00 〜 25:00</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <!-- モーダル夜市用ボタン -->
-            <button type="button" id="market_btn2" name="button">士林夜市</button>
-            <!-- モーダルウィンドウ　夜市 -->
-            <div class="modal_container" id="modal_marketbox2">
-                <span class="modal_close" id="close_btn2"><img src="../common/image/icon_close.svg" alt=""></span>
-                <h3 class="modal_name">寧夏夜市</h3>
-                <p class="modal_market"><img src="../common/image/taipei_modal1.jpg" alt="night_market1"></p>
-                <div class="mordal_text">
-                    <p class="market_detail">
-                        寧夏路夜市は台湾伝統の屋台料理やB級グルメがメインの夜市です。特に大同区の圓環付近には懐かしいグルメがたくさん集まっているので、思う存分味わいましょう。また、ここの夜市は歩道と車道が分かれているので、食事やショッピングに便利です。食の夜市とも言われる寧夏路夜市には毎日、大勢の人々が訪れています。
-                    </p>
-                    <p class="market_time">営業時間：17:00 〜 25:00</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <!-- モーダル夜市用ボタン -->
-            <button type="button" id="market_btn3" name="button">通化夜市</button>
-            <!-- モーダルウィンドウ　夜市 -->
-            <div class="modal_container" id="modal_marketbox3">
-                <span class="modal_close" id="close_btn3"><img src="../common/image/icon_close.svg" alt=""></span>
-                <h3 class="modal_name">寧夏夜市</h3>
-                <p class="modal_market"><img src="../common/image/taipei_modal1.jpg" alt="night_market1"></p>
-                <div class="mordal_text">
-                    <p class="market_detail">
-                        寧夏路夜市は台湾伝統の屋台料理やB級グルメがメインの夜市です。特に大同区の圓環付近には懐かしいグルメがたくさん集まっているので、思う存分味わいましょう。また、ここの夜市は歩道と車道が分かれているので、食事やショッピングに便利です。食の夜市とも言われる寧夏路夜市には毎日、大勢の人々が訪れています。
-                    </p>
-                    <p class="market_time">営業時間：17:00 〜 25:00</p>
-                </div>
-            </div>
-        </div>
-        <!-- ★モーダル後で見直す ここまで-->
+        <!--モーダル見直すここまで -->
 
         <img src="image/nightmarket02_sp.jpg" alt="">
 
@@ -179,7 +126,8 @@
 
     </section>
 
-    <script src="../common/js/loading.js"></script>
+    <script src="../common/js/modal.js"></script>
+    <!-- <script src="../common/js/loading.js"></script> -->
 </body>
 
 </html>
