@@ -16,7 +16,7 @@ h2.common {
     text-align: center;
     background-image: url(../../common/image/flame_h2.png);
     background-size: cover;
-    margin: 60px auto;
+    margin: 60px auto 0;
 }
 
 .common span.subtitle {

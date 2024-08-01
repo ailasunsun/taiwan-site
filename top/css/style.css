@@ -84,7 +84,7 @@ p.flag img {
 /* 共通 p*/
 p.lead {
     width: 225px;
-    margin: 60px auto 20px;
+    margin: 0 auto;
     padding: 12px 0;
     border-top: #000 solid 1px;
     border-bottom: #000 solid 1px;
@@ -130,6 +130,8 @@ p.lead {
 
 .map img {
     width: 194.29px;
+    display: block;
+    margin: 0 auto;
 }
 
 .map a img {
@@ -150,6 +152,45 @@ p.lead {
 
 #tainan {
     position: absolute;
-    right: 130px;
+    right: 102px;
     bottom: 0;
+}
+
+/* Event */
+h3 {
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.event_img {
+    width: 335px;
+    height: 194px;
+    margin: 20px auto;
+}
+
+.event_img img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.date {
+    font-size: 12px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.event_detail .lead {
+    margin-top: 20px;
+}
+
+/* 台湾基本情報 */
+.basic_info {
+    font-size: 12px;
+    line-height: 160%;
 }
