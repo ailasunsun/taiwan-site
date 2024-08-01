@@ -3,7 +3,15 @@
 /* header */
 header {
     height: 667px;
+    width: 375px;
 }
+
+.button img {
+    height: 48px;
+    width: 48px;
+}
+
+
 
 /* footer */
 footer {
@@ -57,18 +65,60 @@ footer {
     font-size: 10px;
 }
 
+#logo img {
+    display: none;
+}
+
 /* pc版 */
 @media screen and (min-width:1366px) {
     footer {
         background-color: #007ab7;
         height: 473px;
         width: 1366px;
+    }
+
+    .foot {
+        height: 473px;
         display: grid;
+        justify-content: center;
+        grid-template-rows: 50% 35% 15%;
+        grid-template-columns: 33% 33% 33%;
+    }
+
+    .a {
+        grid-column: 2/3;
+        grid-row: 1/2;
 
     }
 
+    .b {
+        grid-column: 1/2;
+        grid-row: 1/4;
+
+    }
+
+    .c {
+        grid-column: 3/4;
+        grid-row: 1/4;
+
+    }
+
+    .d {
+        grid-column: 2/3;
+        grid-row: 2/3;
+
+    }
+
+    .e {
+        grid-column: 2/3;
+        grid-row: 3/4;
+
+    }
+
+
+    /* class=a */
     .flag {
-        margin: 40px 651px 21px;
+        margin-left: 248px;
         padding-top: 20px;
     }
 
@@ -77,8 +127,32 @@ footer {
         height: 48px;
     }
 
+    /* class=d */
+    #logo {
+        margin-left: 160px;
+        margin-top: 50px;
+    }
+
+    #logo img {
+        display: block;
+        height: 96px;
+        width: 240px;
+    }
+
+    /* class=e */
+    .e {
+        margin-left: 150px;
+    }
+
+    .com {
+        font-size: 12px;
+    }
+
+    /* class=b */
     .menu {
+        margin: 0;
         margin-left: 103px;
+        margin-top: 89px;
     }
 
     .menu li {
@@ -86,6 +160,53 @@ footer {
         padding: 20px 7.5px 12px 0;
     }
 
+    /* class=e */
+    .sns {
+        width: 203px;
+        height: 55px;
+        margin-top: 346px;
+        margin-right: 100px;
+    }
 
-
+    .sns li {
+        width: 55px;
+        height: 55px;
+    }
 }
+
+/* main{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 236.5px 236.5px;
+    grid-template-columns: 28% 28% 28%;
+}
+
+.a{
+    grid-column:2/3 ;
+    grid-row: 1/2;
+    background-color: aqua;
+}
+
+.b{
+    grid-column:1/2 ;
+    grid-row: 1/4;
+    background-color: chartreuse;
+}
+
+.c{
+    grid-column: 3/4;
+    grid-row:1/4 ;
+    background-color: blueviolet;
+}
+
+.d{
+    grid-column:2/3 ;
+    grid-row:2/3 ;
+    background-color: brown;
+}
+
+.e{
+    grid-column:2/3 ;
+    grid-row:3/4 ;
+    background-color: chocolate;
+} */
