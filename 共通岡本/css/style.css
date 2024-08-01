@@ -6,12 +6,48 @@ header {
     width: 375px;
 }
 
+.button {
+    width: 48px;
+    margin-top: 4px;
+    margin-right: 4px;
+    height: 48px;
+
+}
+
 .button img {
+    /* position: fixed; */
     height: 48px;
     width: 48px;
 }
 
+.nav {
+    height: 667px;
+    width: 225px;
+    background-color: black;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: underline;
+}
 
+.lin {
+    margin-bottom: 369px;
+}
+
+.lin li {
+    padding-bottom: 30px;
+}
+
+.hear {
+    display: flex;
+    justify-content: space-between;
+}
+
+.log img {
+    width: 100px;
+    height: 40px;
+    margin: 8px 8px 107px auto;
+}
 
 /* footer */
 footer {
