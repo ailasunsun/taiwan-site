@@ -65,8 +65,8 @@ nav {
 }
 
 /* 見出し */
-h2 {
-  margin: 60px auto 40px;
+section .common {
+  margin-bottom: 40px;
 }
 
 /* attraction（観光名所） */
@@ -120,22 +120,22 @@ time {
 }
 
 /* nightMarket */
-.nightMarket p {
+.nightMarket .text {
   border-top: 2px solid #000;
   border-bottom: 2px solid #000;
   padding: 16px 0;
   margin-bottom: 20px;
 }
 
+/* モーダルボタン装飾 */
 .nightMarket .modalButton {
-  background-color: #fff;
-  width: 275px;
-  height: 126px;
+  width: 280px;
+  height: 128px;
+  margin: 20px auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 
-  /* 後で消す */
 }
 
 .nightMarket button {
@@ -148,8 +148,37 @@ time {
   text-align: center;
   border: none;
   cursor: pointer;
+  margin-bottom: 12px;
+}
+
+/* 後で消すかもhover */
+.nightMarket button:hover,
+#market_btn:hover {
+  background-color: #ecebeb;
 }
 
 #market_btn {
   background-image: url(../../taipei/image/nightmarket03_button.png);
 }
+
+/* モーダルウィンドウ装飾 */
+.modal_container {
+  overflow: hidden;
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.market_time {
+  margin-top: 20px;
+}
+
+.modal_container {
+  display: none;
+}
+
+
+@media screen and(min-width:1366px) {}
