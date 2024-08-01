@@ -190,7 +190,50 @@ h3 {
 }
 
 /* 台湾基本情報 */
-.basic_info {
+.basic_info,
+.holiday,
+dt {
     font-size: 12px;
     line-height: 160%;
+    font-weight: 400;
+}
+
+.info_wrapper {
+    width: 295px;
+    margin: 40px auto;
+}
+
+.info_list::before {
+    content: "";
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    background-color: #000;
+    position: relative;
+    top: 1px;
+    right: 1px;
+}
+
+.list_text {
+    padding-left: 1em;
+}
+
+dl.holiday {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+dt,
+dd {
+    padding-left: 1em;
+
+}
+
+dt {
+    width: 25%;
+}
+
+dd {
+    width: 75%;
 }

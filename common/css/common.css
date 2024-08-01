@@ -27,7 +27,6 @@ h2.common {
 /* 共通　パンくずリスト */
 .breadcrumb {
     display: flex;
-    list-style: none;
     font-size: 16px;
     color: #000;
 }
