@@ -1,11 +1,12 @@
 @charset "UTF-8";
 
-#loading {
+/* ローディングスタイル */
+/* #loading {
   position: fixed;
   width: 100%;
-  height: 100%;
-  /* 背景色の設定 */
-  background-color: #0180BE;
+  height: 100%; */
+/* 背景色の設定 */
+/* background-color: #0180BE;
   z-index: 99;
   top: 0;
   left: 0;
@@ -13,14 +14,75 @@
   justify-content: center;
   align-items: center;
 }
-
+*/
 #logo {
   width: 287px;
   opacity: 0;
 }
 
+/* ヘッダースタイル */
+/* ドロワー表示ボタン */
+.openButtonStyle {
+  text-align: right;
+  margin: 8px 8px 0px 0px;
+}
+
+/* ドロワー */
+#wrapMenu {
+  top: 0;
+  z-index: 99;
+  background-color: black;
+}
+
+.closeButton {
+  border-radius: 50%;
+  width: 48px;
+  margin-top: 4px;
+  margin-right: 4px;
+  height: 48px;
+}
+
+.closeButton img {
+  height: 48px;
+  width: 48px;
+}
+
+.openMenu {
+  margin: 0 auto;
+  height: 100vh;
+  width: 100%;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  display: none;
+}
+
+.menuList li {
+  padding-bottom: 32px;
+  list-style-type: none;
+}
+
+.menuList li a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: underline 1px;
+  text-underline-offset: 0.2em;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.imgPare img {
+  width: 100px;
+  height: 40px;
+  margin: 8px 8px 72px auto;
+}
+
 /* ★★★PC版表示★★★ */
 
+/* ローディングPC用 */
 @media screen and (min-width:1366px) {
   #logo {
     width: 318px;
