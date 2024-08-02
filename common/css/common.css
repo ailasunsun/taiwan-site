@@ -145,3 +145,131 @@ h3.modal_name {
     padding: 20px;
     border: #cdcdcd solid 4px;
 }
+
+
+/* ローディングSP用 */
+#loading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    /* 背景色の設定 */
+    background-color: #0180BE;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    width: 287px;
+    opacity: 0;
+}
+
+/* ヘッダーSP用 */
+header {
+    height: 667px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.button {
+    width: 48px;
+    margin-top: 4px;
+    margin-right: 4px;
+    height: 48px;
+}
+
+.button img {
+    height: 48px;
+    width: 48px;
+}
+
+.nav {
+    height: 667px;
+    max-width: 1200px;
+    width: 100%;
+    background-color: black;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: underline;
+    display: none;
+}
+
+.lin {
+    margin-bottom: 369px;
+}
+
+.lin li {
+    padding-bottom: 30px;
+}
+
+.hear {
+    display: flex;
+    justify-content: space-between;
+}
+
+.log img {
+    width: 100px;
+    height: 40px;
+    margin: 8px 8px 107px auto;
+}
+
+/* PC版 */
+@media screen and (min-width:600px) {
+    #logo {
+        width: 318px;
+    }
+
+    /* ローディングPC用ここまで */
+
+    /* ナビゲーションPC用 */
+    /* 中央に固定配置 */
+    header {
+        margin: 0 auto;
+    }
+
+    /* 常に表示 */
+    .nav {
+        display: flex;
+        max-width: 1200px;
+        width: 100%;
+        background-color: transparent;
+        color: #fff;
+        font-size: 24px;
+        justify-content: space-between;
+        text-decoration: none;
+    }
+
+    .log img {
+        width: 140px;
+        height: 56px;
+        object-fit: cover;
+        margin: 20px 0px 0px 20px;
+    }
+
+    /* ボタン非表示 */
+    .button {
+        display: none;
+        justify-content: space-between;
+    }
+
+    /* ulのメニューを横並び */
+    .lin {
+        overflow: visible;
+        display: flex;
+        justify-content: space-between;
+        margin: 36px 20px 0px 0px;
+    }
+
+    .lin li {
+        margin: 0 20px;
+    }
+
+    /* 仮でホバーつけました  */
+    .lin li a:hover {
+        border-bottom: 1px solid #fff;
+    }
+}
