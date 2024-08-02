@@ -145,3 +145,48 @@ h3.modal_name {
     padding: 20px;
     border: #cdcdcd solid 4px;
 }
+
+@media screen and (min-width:600px) {
+    .modal_pc_test {
+        width: 1200px;
+        background-color: #0180BE;
+        border: 5px solid #efefef;
+        display: flex;
+    }
+
+    .container {
+        background-color: #353535;
+    }
+
+    .image_wrapper {
+        width: 600px;
+        height: 476px;
+        border: 5px solid #efefef;
+        background-color: #757575;
+    }
+
+    .image_wrapper img {
+        width: 600px;
+        height: 400px;
+        background-color: #bababa;
+        border: 5px solid #efefef;
+        text-align: center;
+    }
+
+    .container {
+        margin: 120px auto 172px;
+        font-size: 36px;
+    }
+
+    .container h2 {
+        font-size: 36px;
+        color: #000;
+        font-weight: bold;
+        margin-bottom: 20px;
+        background-color: #fff;
+    }
+
+    .text {
+        color: #fff;
+    }
+}

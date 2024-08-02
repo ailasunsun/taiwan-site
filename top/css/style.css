@@ -121,6 +121,11 @@ p.lead {
 }
 
 /* Travel */
+
+.travel .lead {
+    margin-top: 40px;
+}
+
 .map {
     width: 240px;
     height: 392.57px;
@@ -237,3 +242,7 @@ dt {
 dd {
     width: 75%;
 }
+
+
+/* PC版 */
+@media screen and (min-width:600px) {}
