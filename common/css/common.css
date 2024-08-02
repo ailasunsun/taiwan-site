@@ -229,6 +229,7 @@ header {
     /* 中央に固定配置 */
     header {
         margin: 0 auto;
+        height: 0px;
     }
 
     /* 常に表示 */
