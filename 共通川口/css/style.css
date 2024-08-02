@@ -27,6 +27,7 @@
   font-family: 'Zen Kaku Gothic New', 'Noto Sans JP', sans-serif;
 }
 
+/* ヘッダーSP用 */
 header {
   height: 667px;
   width: 100%;
@@ -54,7 +55,7 @@ header {
   font-size: 20px;
   text-align: center;
   text-decoration: underline;
-  display: none;
+  /* display: none; */
 }
 
 .lin {
@@ -76,11 +77,7 @@ header {
   margin: 8px 8px 107px auto;
 }
 
-/* ヘッダーSP用ここまで */
-
-
-
-/* ローディングPC用 */
+/* PC版 */
 @media screen and (min-width:600px) {
   #logo {
     width: 318px;
@@ -92,6 +89,7 @@ header {
   /* 中央に固定配置 */
   header {
     margin: 0 auto;
+    height: 0px;
   }
 
   /* 常に表示 */
@@ -135,4 +133,5 @@ header {
   .lin li a:hover {
     border-bottom: 1px solid #fff;
   }
+
 }
