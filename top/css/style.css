@@ -10,6 +10,8 @@
     height: 667px;
     background: url(../image/top_bg_sp.jpg) top center/cover;
     padding-top: 160px;
+    display: flex;
+    justify-content: center;
 }
 
 #icon_drawer {
@@ -21,33 +23,30 @@
 }
 
 h1 {
-    margin: 0 auto;
-    width: 335px;
+    text-align: center;
+    /* background-color: blue; */
 }
 
 h1 img {
     height: 135px;
     width: 335px;
-    text-align: center;
 }
 
 /* 紹介 */
 #cont1 {
-
     background: url(../image/top_formosa01.jpg) top left/cover;
-    background-color: rgba(255, 255, 255, 0.6);
-    background-blend-mode: lighten;
-    padding-top: 60px;
-    text-align: center;
 }
 
 #cont2 {
     background: url(../image/top_formosa02.jpg) top left/cover;
+}
+
+#cont1,
+#cont2 {
     background-color: rgba(255, 255, 255, 0.6);
     background-blend-mode: lighten;
     padding-top: 60px;
     text-align: center;
-
 }
 
 .flag {
@@ -244,5 +243,46 @@ dd {
 }
 
 
-/* PC版 */
-@media screen and (min-width:600px) {}
+/* PC版 ここから*/
+@media screen and (min-width:600px) {
+
+    /* Header */
+    .hero {
+        max-width: 1366px;
+        height: 768px;
+        background: url(../image/top_bg_sp.jpg) top center/cover;
+        padding: 0;
+        align-items: center;
+    }
+
+    h1 img {
+        max-width: 780px;
+        width: 57vw;
+        height: 100%;
+    }
+
+    /* Formosa */
+    .intro_cont {
+        display: flex;
+        justify-content: space-between;
+        padding: 80px 20px;
+    }
+
+    .cont_inner {
+        width: 420px;
+        height: 298px;
+    }
+
+    .image_box {
+        width: 636px;
+        height: 298px;
+    }
+
+    .formosa_img {
+        width: 636px;
+        height: 298px;
+    }
+
+
+
+}
