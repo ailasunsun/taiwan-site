@@ -52,8 +52,9 @@
 
     <div class="box">
         <!-- モーダル文化施設用ボタン -->
-        <button type="button" id="cultural_btn" name="button">営業時間を見る<img src="image/rectangle.png"
-                alt="triangle"></button>
+        <button type="button" id="cultural_btn" name="button">営業時間を見る<p id="triangle"></p>
+            <!-- <img src="image/rectangle.png" alt="triangle"> -->
+        </button>
 
         <!-- モーダルウィンドウ　文化施設 -->
 
@@ -67,7 +68,39 @@
             <p class="mordal_text">営業時間：10:00〜18:00<br>住所：台中市東区旱渓東路一段456号1階</p>
         </div>
     </div>
+    <!-- loading領域 -->
+    <!-- cssはcommonの共通を読み込んでください -->
+    <!-- JavaScriptはcommon内のloadingを読み込んでください -->
+    <div id="loading">
+        <img src="../common/image/logo.svg" alt="logo" id="logo">
+    </div>
 
+    <!-- header領域 -->
+    <!-- header内に書いてください。記載方法は共通川口のindex.htmlを参照してください -->
+    <!--  javascriptはcommonのothers.jsを読み込んでください-->
+    <header>
+        <nav class="nav" id="nav">
+            <input type="checkbox" id="menu-btn" class="menu-btn" value="open">
+            <div class="hear">
+
+                <label class="menu-icon" for="menu-btn">
+                    <img src="../common/image/icon_drawer.svg" alt="" id="button">
+                </label>
+            </div>
+
+            <div class="menuList">
+                <p class="log">
+                    <img src="../common/image/logo.svg" alt="" class="menu">
+                </p>
+                <ul class="lin">
+                    <li><a href="../top/index.html">TOP</a></li>
+                    <li><a href="../taipei/index.html">台北</a></li>
+                    <li><a href="../taichung/index.html">台中</a></li>
+                    <li><a href="../tainan/index.html">台南</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     <!-- footer領域 -->
     <footer>
         <div class="foot">
