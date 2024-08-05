@@ -294,27 +294,6 @@ footer {
 
 /* PC版 */
 @media screen and (min-width:600px) {
-<<<<<<< HEAD
-
-    /*共通　見出し*/
-    h2.common {
-        font-size: 48px;
-        width: 530px;
-        height: 96px;
-        text-align: center;
-        background-image: url(../../common/image/flame_h2.png);
-        background-size: cover;
-        margin: 60px auto 0;
-        line-height: 96px;
-    }
-
-    .common span.subtitle {
-        font-size: 24px;
-        padding-left: 0.5em;
-    }
-
-
-=======
     #logo {
         width: 318px;
     }
@@ -481,5 +460,22 @@ footer {
         text-align: center;
         margin-bottom: 40px;
     }
->>>>>>> 14c8b72ab6d9fff9278f96361f86acd7e0033bd1
+
+    /*共通　見出し*/
+    h2.common {
+        font-size: 48px;
+        width: 530px;
+        height: 96px;
+        text-align: center;
+        background-image: url(../../common/image/flame_h2.png);
+        background-size: cover;
+        margin: 60px auto 0;
+        line-height: 96px;
+    }
+
+    .common span.subtitle {
+        font-size: 24px;
+        padding-left: 0.5em;
+    }
+
 }
