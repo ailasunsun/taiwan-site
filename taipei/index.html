@@ -18,38 +18,42 @@
 
 <body>
     <!-- ローディング用HTMLここから -->
-    <div id="loading">
+    <!-- <div id="loading">
         <img src="../common/image/logo.svg" alt="logo" id="logo">
-    </div>
+    </div> -->
     <!-- ここまで -->
     <header>
+        <!-- drower -->
         <nav class="nav" id="nav">
+            <input type="checkbox" id="menu-btn" class="menu-btn" value="open">
             <div class="hear">
+
+                <label class="menu-icon" for="menu-btn">
+                    <img src="../common/image/icon_drawer.svg" alt="" id="button">
+                </label>
+            </div>
+
+            <div class="menuList">
                 <p class="log">
                     <img src="../common/image/logo.svg" alt="" class="menu">
                 </p>
-
-                <button class="button" id="close">
-                    <img src="../common/image/icon_drawer_close.svg" alt="" id="button">
-                </button>
-
+                <ul class="lin">
+                    <li><a href="../top/index.html">TOP</a></li>
+                    <li><a href="../taipei/index.html">台北</a></li>
+                    <li><a href="../taichung/index.html">台中</a></li>
+                    <li><a href="../tainan/index.html">台南</a></li>
+                </ul>
             </div>
-            <ul class="lin">
-                <li><a href="../top/index.html">TOP</a></li>
-                <li><a href="../taipei/index.html">台北</a></li>
-                <li><a href="../taichung/index.html">台中</a></li>
-                <li><a href="../tainan/index.html">台南</a></li>
-            </ul>
         </nav>
-    </header>
-
-    <div class="hero">
-        <p id="icon_drawer"><img src="../common/image/icon_drawer.svg" alt=""></p>
-        <div class="title"><img src="image/header_title.png" alt="header"></div>
-        <div class="description">
-            <p>台北市は台湾の中心地です。活気にあふれる街台北では、さまざまな建物や台北を生きる人々の美しい風景を見ることができます。</p>
+        <!-- ナビここまで -->
+        <div class="hero">
+            <!-- <img src="../common/image/logo.svg" class="miniLogo"> -->
+            <div class="title"><img src="image/header_title.png" alt="header"></div>
+            <div class="description">
+                <p>台北市は台湾の中心地です。活気にあふれる街台北では、さまざまな建物や台北を生きる人々の美しい風景を見ることができます。</p>
+            </div>
         </div>
-    </div>
+    </header>
 
     <nav>
         <ol class="breadcrumb">
