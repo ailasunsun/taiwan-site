@@ -367,4 +367,21 @@ footer {
         text-align: center;
         margin-bottom: 40px;
     }
+
+    /*共通　見出し*/
+    h2.common {
+        font-size: 48px;
+        width: 530px;
+        height: 96px;
+        text-align: center;
+        background-image: url(../../common/image/flame_h2.png);
+        background-size: cover;
+        margin: 60px auto 0;
+        line-height: 96px;
+    }
+
+    .common span.subtitle {
+        font-size: 24px;
+        padding-left: 0.5em;
+    }
 }
