@@ -42,14 +42,17 @@
 .titlesub {
     display: flex;
     justify-content: right;
-    align-items: flex-end;
 }
 
 .titlesub p {
     width: 247px;
     color: #fff;
     padding-bottom: 8px;
+    font-size: 12px;
 }
+
+
+/* main */
 
 .heading {
     font-size: 24px;
@@ -60,7 +63,7 @@
     font-size: 16px;
 }
 
-/* main */
+
 h3 {
     font-weight: bold;
     font-size: 24px;
@@ -69,7 +72,7 @@ h3 {
 
 .att img {
     height: 221px;
-    width: 100%;
+    width: 80%;
     min-width: 295px;
 }
 
@@ -84,4 +87,16 @@ h3 {
     height: 231px;
     min-width: 295px;
     width: 100%;
+}
+
+/* museum */
+.mus img {
+    height: 135px;
+    width: 295px;
+}
+
+/* sweets */
+.sweets img {
+    height: 190px;
+    width: 295px;
 }
