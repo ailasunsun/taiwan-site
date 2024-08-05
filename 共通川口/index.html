@@ -16,44 +16,54 @@
 
 <body>
     <!-- ローディング用HTMLここから -->
-    <!-- <div id="loading">
+    <!-- cssはcommonの共通を読み込んでください -->
+    <!-- javaScriptはcommon内のloadingを読み込んでください -->
+    <div id="loading">
         <img src="../common/image/logo.svg" alt="logo" id="logo">
-    </div> -->
+    </div>
 
-    <!-- <script src="../common/js/loading.js"></script> -->
     <!-- ローディング用HTMLここまで -->
 
-    <!-- ヘッダー用HTMLここから -->
+    <!-- ナビHTMLここから -->
+    <!--  js,cssはcommonの共通を読み込んでください-->
     <header>
-        <!-- ボタン -->
-        <div class="openButtonStyle">
-            <button class="openButton" id="openButton">
-                <img src="../common/image/icon_drawer.svg" alt="" id="button">
-            </button>
-        </div>
+        <nav class="nav" id="nav">
+            <input type="checkbox" id="menu-btn" class="menu-btn" value="open">
+            <div class="hear">
 
-        <!-- ドロワーメニュー -->
-        <div id="wrapMenu">
-            <nav class="openMenu" id="openMenu">
-                <div class="head">
-                    <div class="imgPare">
-                        <img src="../common/image/logo.svg" alt="" class="menu">
-                    </div>
-                    <button class="closeButton" id="closeButton">
-                        <img src="../common/image/icon_drawer_close.svg" alt="closeButton">
-                    </button>
-                </div>
-                <ul class="menuList">
+                <label class="menu-icon" for="menu-btn">
+                    <img src="../common/image/icon_drawer.svg" alt="" id="button">
+                </label>
+            </div>
+
+            <div class="menuList">
+                <p class="log">
+                    <img src="../common/image/logo.svg" alt="" class="menu">
+                </p>
+                <ul class="lin">
                     <li><a href="../top/index.html">TOP</a></li>
                     <li><a href="../taipei/index.html">台北</a></li>
                     <li><a href="../taichung/index.html">台中</a></li>
                     <li><a href="../tainan/index.html">台南</a></li>
                 </ul>
-            </nav>
+            </div>
+        </nav>
+        <!-- ナビここまで -->
+
+        <div class="hero">
+            <div class="title"><img src="../taipei/image/header_title.png" alt="header"></div>
+            <div class="description">
+                <p>台北市は台湾の中心地です。活気にあふれる街台北では、さまざまな建物や台北を生きる人々の美しい風景を見ることができます。</p>
+            </div>
         </div>
     </header>
+
+    <text>
+        test
+    </text>
+
+    <script src="../common/js/loading.js"></script>
     <script src="js/top.js"></script>
-    <!-- ここまで -->
 
 </body>
 

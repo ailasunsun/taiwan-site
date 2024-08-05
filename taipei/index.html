@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../共通川口/css/style.css">
     <link rel="stylesheet" href="../common/css/reset.css">
+    <!--以下あとでcommonのcssに変える -->
     <link rel="stylesheet" href="../common/css/common.css">
     <link rel="stylesheet" href="css/taipei.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,11 +21,30 @@
     <div id="loading">
         <img src="../common/image/logo.svg" alt="logo" id="logo">
     </div>
-
-    <script src="js/top.js"></script>
     <!-- ここまで -->
+    <header>
+        <nav class="nav" id="nav">
+            <div class="hear">
+                <p class="log">
+                    <img src="../common/image/logo.svg" alt="" class="menu">
+                </p>
+
+                <button class="button" id="close">
+                    <img src="../common/image/icon_drawer_close.svg" alt="" id="button">
+                </button>
+
+            </div>
+            <ul class="lin">
+                <li><a href="../top/index.html">TOP</a></li>
+                <li><a href="../taipei/index.html">台北</a></li>
+                <li><a href="../taichung/index.html">台中</a></li>
+                <li><a href="../tainan/index.html">台南</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <div class="hero">
+        <p id="icon_drawer"><img src="../common/image/icon_drawer.svg" alt=""></p>
         <div class="title"><img src="image/header_title.png" alt="header"></div>
         <div class="description">
             <p>台北市は台湾の中心地です。活気にあふれる街台北では、さまざまな建物や台北を生きる人々の美しい風景を見ることができます。</p>
@@ -147,7 +166,6 @@
             </div>
         </div>
 
-        <!--モーダル見直すここまで -->
 
         <img src="image/nightmarket02_sp.jpg" alt="">
 
@@ -178,6 +196,8 @@
     </section>
 
     <script src="../common/js/loading.js"></script>
+    <!-- 以下後でcommonのothersに変える -->
+    <script src="../common/js/others.js"></script>
     <script src="../common/js/modal.js"></script>
     <script src="js/taipei.js"></script>
 
