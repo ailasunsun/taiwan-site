@@ -314,6 +314,11 @@ footer {
         display: none;
     }
 
+    .nav {
+        position: static;
+        z-index: auto;
+    }
+
     .menuList {
         background-color: transparent;
         overflow: visible;
