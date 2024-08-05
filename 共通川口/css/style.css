@@ -27,111 +27,154 @@
   font-family: 'Zen Kaku Gothic New', 'Noto Sans JP', sans-serif;
 }
 
-/* ヘッダーSP用 */
-header {
-  height: 667px;
-  width: 100%;
-  max-width: 1200px;
-}
-
-.button {
-  width: 48px;
-  margin-top: 4px;
-  margin-right: 4px;
-  height: 48px;
-}
-
-.button img {
-  height: 48px;
-  width: 48px;
-}
-
+/* ロゴとバッテン */
 .nav {
-  height: 667px;
-  max-width: 1200px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 98;
   width: 100%;
-  background-color: black;
-  color: #fff;
-  font-size: 20px;
-  text-align: center;
-  text-decoration: underline;
-  /* display: none; */
 }
 
-.lin {
-  margin-bottom: 369px;
-}
-
-.lin li {
-  padding-bottom: 30px;
-}
-
-.hear {
-  display: flex;
-  justify-content: space-between;
+/* TAIWAN左ロゴ */
+.log {
+  padding-top: 4px;
+  padding-left: 4px;
 }
 
 .log img {
   width: 100px;
-  height: 40px;
-  margin: 8px 8px 107px auto;
 }
+
+.menu-btn {
+  display: none;
+}
+
+/* ドロワーアイコン */
+.menu-icon {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  height: 48px;
+  /* ポインターの形状 指 */
+  cursor: pointer;
+}
+
+/* 表示対象の */
+.menuList {
+  background-color: #000;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.6s;
+}
+
+.lin {
+  height: 100vh;
+  color: #fff;
+  text-align: center;
+  /* 非表示 */
+  margin-top: 72px;
+}
+
+.lin li {
+  margin-bottom: 32px;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: underline 1px;
+  /* 下線との余白 */
+  text-underline-offset: 0.2em;
+}
+
+.lin li a:hover {
+  text-decoration: none;
+}
+
+
+.menu-btn:checked~.menuList {
+  max-height: 100vh;
+  /* 元 0px */
+  /* 表示の際のアニメーション */
+  transition: max-height 0.6s;
+}
+
+/* 仮 */
+.hero {
+  min-width: 375px;
+  background: url(../../taipei/image/header_sp.jpg) no-repeat center top/cover;
+}
+
+
+.hero .title {
+  width: 199px;
+  margin: auto;
+}
+
+.hero .title img {
+  height: 372px;
+  margin: 120px 0 175px;
+}
+
+#icon_drawer {
+  width: 48px;
+  height: 48px;
+  position: fixed;
+  top: 0px;
+  right: 8px;
+}
+
+.description {
+  display: flex;
+  justify-content: right;
+}
+
+/* 仮 */
+
+.hero p {
+  width: 247px;
+  color: #000;
+  padding-bottom: 8px;
+}
+
 
 /* PC版 */
 @media screen and (min-width:600px) {
+
+  /* ローディングPC用ここから */
   #logo {
     width: 318px;
   }
 
   /* ローディングPC用ここまで */
 
-  /* ナビゲーションPC用 */
-  /* 中央に固定配置 */
-  header {
-    margin: 0 auto;
-    height: 0px;
-  }
-
-  /* 常に表示 */
-  .nav {
-    display: flex;
-    max-width: 1200px;
-    width: 100%;
-    background-color: transparent;
-    color: #fff;
-    font-size: 24px;
-    justify-content: space-between;
-    text-decoration: none;
-  }
-
-  .log img {
-    width: 140px;
-    height: 56px;
-    object-fit: cover;
-    margin: 20px 0px 0px 20px;
-  }
-
-  /* ボタン非表示 */
-  .button {
+  /* ナビゲーションPC用ここから */
+  #button {
     display: none;
-    justify-content: space-between;
   }
 
-  /* ulのメニューを横並び */
-  .lin {
+  .menuList {
+    background-color: transparent;
     overflow: visible;
     display: flex;
+    max-width: 1200px;
     justify-content: space-between;
-    margin: 36px 20px 0px 0px;
+    margin: 20px auto 0;
+  }
+
+  .log {
+    height: 56px;
+    width: 140px;
+    margin-left: 20px;
+  }
+
+  .lin {
+    display: flex;
+    margin: 16px 20px 0px 0px;
   }
 
   .lin li {
     margin: 0 20px;
+    font-size: 24px;
   }
 
-  /* 仮でホバーつけました  */
-  .lin li a:hover {
-    border-bottom: 1px solid #fff;
-  }
-
+  /* ナビゲーションPC用ここまで */
 }
