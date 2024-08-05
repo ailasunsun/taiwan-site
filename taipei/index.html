@@ -18,38 +18,42 @@
 
 <body>
     <!-- ローディング用HTMLここから -->
-    <div id="loading">
+    <!-- <div id="loading">
         <img src="../common/image/logo.svg" alt="logo" id="logo">
-    </div>
+    </div> -->
     <!-- ここまで -->
     <header>
+        <!-- drower -->
         <nav class="nav" id="nav">
+            <input type="checkbox" id="menu-btn" class="menu-btn" value="open">
             <div class="hear">
+
+                <label class="menu-icon" for="menu-btn">
+                    <img src="../common/image/icon_drawer.svg" alt="" id="button">
+                </label>
+            </div>
+
+            <div class="menuList">
                 <p class="log">
                     <img src="../common/image/logo.svg" alt="" class="menu">
                 </p>
-
-                <button class="button" id="close">
-                    <img src="../common/image/icon_drawer_close.svg" alt="" id="button">
-                </button>
-
+                <ul class="lin">
+                    <li><a href="../top/index.html">TOP</a></li>
+                    <li><a href="../taipei/index.html">台北</a></li>
+                    <li><a href="../taichung/index.html">台中</a></li>
+                    <li><a href="../tainan/index.html">台南</a></li>
+                </ul>
             </div>
-            <ul class="lin">
-                <li><a href="../top/index.html">TOP</a></li>
-                <li><a href="../taipei/index.html">台北</a></li>
-                <li><a href="../taichung/index.html">台中</a></li>
-                <li><a href="../tainan/index.html">台南</a></li>
-            </ul>
         </nav>
-    </header>
-
-    <div class="hero">
-        <p id="icon_drawer"><img src="../common/image/icon_drawer.svg" alt=""></p>
-        <div class="title"><img src="image/header_title.png" alt="header"></div>
-        <div class="description">
-            <p>台北市は台湾の中心地です。活気にあふれる街台北では、さまざまな建物や台北を生きる人々の美しい風景を見ることができます。</p>
+        <!-- ナビここまで -->
+        <div class="hero">
+            <!-- <img src="../common/image/logo.svg" class="miniLogo"> -->
+            <div class="title"><img src="image/header_title.png" alt="header"></div>
+            <div class="description">
+                <p>台北市は台湾の中心地です。活気にあふれる街台北では、さまざまな建物や台北を生きる人々の美しい風景を見ることができます。</p>
+            </div>
         </div>
-    </div>
+    </header>
 
     <nav>
         <ol class="breadcrumb">
@@ -177,28 +181,33 @@
         <p>各地へのアクセスにご利用ください。</p>
         <img src="image/access01_sp.jpg" alt="">
         <dl>
-            <dt>地下鉄<span>（初乗り20元）</span></dt>
+            <dt>&#9632;地下鉄<span>（初乗り20元）</span></dt>
             <dd>乗り方は日本の地下鉄とほぼ同じ。改札を通る時に、切符やICカードをタッチします。台北MRTは全て各駅停車です。</dd>
 
-            <dt>バス<span>（初乗り15元）</span></dt>
+            <dt>&#9632;バス<span>（初乗り15元）</span></dt>
             <dd>バス停には、ポールが立っており、大通りでは車道の真ん中のバスレーン沿いにあります。乗りたい場合、バスに向かって手を挙げて知らせます。運賃を現金で払う場合は、運転手に行先を告げてから運賃箱にお金を入れます。
             </dd>
 
-            <dt>タクシー<span>（初乗り70元）</span></dt>
+            <dt>&#9632;タクシー<span>（初乗り70元）</span></dt>
             <dd>市内の移動で気軽に使うことが出来ます。MRTなどが運行していない真夜中や早朝の移動にも便利です。新幹線の駅や有名観光地などにはタクシー乗り場が準備されているので、そこから乗りましょう。ホテルではフロントで呼んでもらうこともできます。
             </dd>
 
-            <dt>悠遊カード<span>（販売額100元）</span></dt>
+            <dt>&#9632;悠遊カード<span>（販売額100元）</span>
+                <figure><img src="image/access02_minicard.jpg" alt="minicard"></figure>
+            </dt>
             <dd>現金をチャージして使うことが出来る交通系ICカードです。MRT・バス・台湾鉄路などで使用することができ、運賃が割引になります。台北旅行の際に手に入れておくと便利です。</dd>
         </dl>
-
-
     </section>
+
+    <footer>
+        <!-- あとでfooter入れる -->
+    </footer>
 
     <script src="../common/js/loading.js"></script>
     <!-- 以下後でcommonのothersに変える -->
     <script src="../common/js/others.js"></script>
     <script src="../common/js/modal.js"></script>
+    <script src="../common/js/pagetop.js"></script>
     <script src="js/taipei.js"></script>
 
 </body>

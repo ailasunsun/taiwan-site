@@ -114,13 +114,13 @@
   margin: 120px 0 175px;
 }
 
-#icon_drawer {
+/* #icon_drawer {
   width: 48px;
   height: 48px;
   position: fixed;
   top: 0px;
   right: 8px;
-}
+} */
 
 .description {
   display: flex;
