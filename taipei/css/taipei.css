@@ -188,6 +188,10 @@ time {
 }
 
 /* accsess */
+.access {
+  margin-bottom: 128px;
+}
+
 .access h2 {
   margin-bottom: 48px;
 }
@@ -201,6 +205,7 @@ time {
   padding: 0 10.5px 8px;
   margin-bottom: 20px;
 }
+
 
 .access dl dt {
   margin: 20px 0 12px;
