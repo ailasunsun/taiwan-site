@@ -54,10 +54,11 @@ h1 img {
     text-align: center;
 }
 
-img.flag {
+.cont_inner img.flag {
     width: 35px;
     height: 24px;
     margin: 0 auto 40px;
+    padding: 0;
 }
 
 .intro_cont {
@@ -96,9 +97,9 @@ p.lead {
     text-align: left;
 }
 
-.intro_cont p.lead {
-    margin: 0;
-}
+/* .intro_cont p.lead {
+    margin: 0 auto;
+} */
 
 /* Gallery */
 .slider_image {
@@ -174,6 +175,12 @@ p.lead {
 }
 
 /* Event */
+
+.event_detail {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
 h3 {
     font-size: 20px;
     line-height: 32px;
@@ -300,7 +307,7 @@ dd {
         padding-left: 20px;
     }
 
-    img.flag {
+    .cont_inner img.flag {
         display: inline-block;
         width: 28%;
         max-width: 117px;
@@ -344,8 +351,10 @@ dd {
     }
 
     /* コンテンツ最大幅1200px */
-    .innerwrap {
-        margin: 0 20px;
+    .innerwrap_top {
+        margin: auto;
+        padding: 0 20px;
+        max-width: 1200px;
     }
 
     /* GalleryPC */
@@ -483,7 +492,54 @@ dd {
         display: grid;
         grid-template-columns: 580px 420px;
         grid-template-rows: 20px 1fr;
+        column-gap: 80px;
     }
 
+    .item01 {
+        grid-row: 1/2;
+        grid-column: 1/4;
+    }
 
+    .item02 {
+        grid-row: 2/4;
+        grid-column: 1/2;
+    }
+
+    .item03 {
+        grid-row: 2/3;
+        grid-column: 3/4;
+    }
+
+    .item04 {
+        grid-row: 3/4;
+        grid-column: 3/4;
+    }
+
+    .item05 {
+        grid-row: ;
+        grid-column: ;
+    }
+
+    .item06 {
+        grid-row: ;
+        grid-column: ;
+    }
+
+    .item07 {
+        grid-row: ;
+        grid-column: ;
+    }
+
+    .item08 {
+        grid-row: ;
+        grid-column: ;
+    }
+
+    h3 {
+        font-size: 36px;
+        text-align: left;
+        line-height: 57.6px;
+    }
 }
+
+/
