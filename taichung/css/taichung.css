@@ -1,1 +1,25 @@
 @charset "UTF-8";
+
+header {
+    width: 100%;
+    max-width: 599px;
+    height: 667px;
+    background: url(../image_taichung/背景画像.jpg) no-repeat center top/cover;
+}
+
+.taichung_logo {
+    display: flex;
+}
+
+.title_img {
+    width: 55%;
+    height: 372px;
+    margin: auto;
+    background-color: blueviolet;
+}
+
+.title_img img {
+    width: 55%;
+    max-width: 599px;
+    height: 372px;
+}

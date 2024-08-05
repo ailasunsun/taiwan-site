@@ -181,54 +181,65 @@ h3.modal_name {
     opacity: 0;
 }
 
-/* ヘッダーSP用 */
-header {
-    height: 667px;
-    width: 100%;
-    max-width: 1200px;
-}
-
-.button {
-    width: 48px;
-    margin-top: 4px;
-    margin-right: 4px;
-    height: 48px;
-}
-
-.button img {
-    height: 48px;
-    width: 48px;
-}
-
+/* header SP用 */
 .nav {
-    height: 667px;
-    max-width: 1200px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 98;
     width: 100%;
-    background-color: black;
-    color: #fff;
-    font-size: 20px;
-    text-align: center;
-    text-decoration: underline;
-    display: none;
 }
 
-.lin {
-    margin-bottom: 369px;
-}
-
-.lin li {
-    padding-bottom: 30px;
-}
-
-.hear {
-    display: flex;
-    justify-content: space-between;
+.log {
+    padding-top: 4px;
+    padding-left: 4px;
 }
 
 .log img {
     width: 100px;
-    height: 40px;
-    margin: 8px 8px 107px auto;
+}
+
+.menu-btn {
+    display: none;
+}
+
+.menu-icon {
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    height: 48px;
+    cursor: pointer;
+}
+
+.menuList {
+    background-color: #000;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.6s;
+}
+
+.lin {
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+    margin-top: 72px;
+}
+
+.lin li {
+    margin-bottom: 32px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline 1px;
+    text-underline-offset: 0.2em;
+}
+
+.lin li a:hover {
+    text-decoration: none;
+}
+
+.menu-btn:checked~.menuList {
+    max-height: 100vh;
+    transition: max-height 0.6s;
 }
 
 /* footer */
@@ -298,138 +309,34 @@ footer {
         width: 318px;
     }
 
-    /* ローディングPC用ここまで */
-
-    /* ナビゲーションPC用 */
-    /* 中央に固定配置 */
-    header {
-        margin: 0 auto;
-        height: 0px;
-    }
-
-    /* 常に表示 */
-    .nav {
-        display: flex;
-        max-width: 1200px;
-        width: 100%;
-        background-color: transparent;
-        color: #fff;
-        font-size: 24px;
-        justify-content: space-between;
-        text-decoration: none;
-    }
-
-    .log img {
-        width: 140px;
-        height: 56px;
-        object-fit: cover;
-        margin: 20px 0px 0px 20px;
-    }
-
-    /* ボタン非表示 */
-    .button {
+    /* header PC用 */
+    #button {
         display: none;
-        justify-content: space-between;
     }
 
-    /* ulのメニューを横並び */
-    .lin {
+    .menuList {
+        background-color: transparent;
         overflow: visible;
         display: flex;
+        max-width: 1200px;
         justify-content: space-between;
-        margin: 36px 20px 0px 0px;
+        margin: 20px auto 0;
+    }
+
+    .log {
+        height: 56px;
+        width: 140px;
+        margin-left: 20px;
+    }
+
+    .lin {
+        display: flex;
+        margin: 16px 20px 0px 0px;
     }
 
     .lin li {
         margin: 0 20px;
-    }
-
-    /* 仮でホバーつけました  */
-    .lin li a:hover {
-        border-bottom: 1px solid #fff;
-    }
-
-    /* footer */
-    footer {
-        background-color: #007ab7;
-        height: 473px;
-        width: 100%;
-        max-width: 1200px;
-    }
-
-    .foot {
-        height: 473px;
-        display: grid;
-        justify-content: center;
-        grid-template-rows: 50% 35% 15%;
-        grid-template-columns: 33% 33% 33%;
-    }
-
-    .a {
-        grid-column: 2/3;
-        grid-row: 1/2;
-
-    }
-
-    .b {
-        grid-column: 1/2;
-        grid-row: 1/4;
-
-    }
-
-    .c {
-        grid-column: 3/4;
-        grid-row: 1/4;
-
-    }
-
-    .d {
-        grid-column: 2/3;
-        grid-row: 2/3;
-
-    }
-
-    .e {
-        grid-column: 2/3;
-        grid-row: 3/4;
-
-    }
-
-
-    /* class=a */
-    .flag {
-        text-align: center;
-        padding-top: 20px;
-    }
-
-    .flag img {
-        max-width: 64px;
-        width: 100%;
-        height: 48px;
-    }
-
-    /* class=b */
-    .menu {
-        margin: 0;
-        margin-left: 15%;
-        margin-top: 89px;
-        width: 70%;
-        max-width: 100%;
-    }
-
-    .menu li {
-        font-size: 1.66vw;
-        padding: 20px 7.5px 12px 0;
-    }
-
-    /* class=c */
-    .sns {
-        max-width: 203px;
-        width: 100%;
-        height: 55px;
-        margin-top: 346px;
-        margin-right: 7%;
-        padding-left: 30px;
+        font-size: 24px;
     }
 
     .sns li {
@@ -460,22 +367,4 @@ footer {
         text-align: center;
         margin-bottom: 40px;
     }
-
-    /*共通　見出し*/
-    h2.common {
-        font-size: 48px;
-        width: 530px;
-        height: 96px;
-        text-align: center;
-        background-image: url(../../common/image/flame_h2.png);
-        background-size: cover;
-        margin: 60px auto 0;
-        line-height: 96px;
-    }
-
-    .common span.subtitle {
-        font-size: 24px;
-        padding-left: 0.5em;
-    }
-
 }
