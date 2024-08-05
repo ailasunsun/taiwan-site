@@ -60,7 +60,7 @@
   cursor: pointer;
 }
 
-/* 表示対象の */
+/* 表示対象 */
 .menuList {
   background-color: #000;
   overflow: hidden;
@@ -89,7 +89,6 @@
   text-decoration: none;
 }
 
-
 .menu-btn:checked~.menuList {
   max-height: 100vh;
   /* 元 0px */
@@ -114,13 +113,6 @@
   margin: 120px 0 175px;
 }
 
-/* #icon_drawer {
-  width: 48px;
-  height: 48px;
-  position: fixed;
-  top: 0px;
-  right: 8px;
-} */
 
 .description {
   display: flex;
@@ -128,7 +120,6 @@
 }
 
 /* 仮 */
-
 .hero p {
   width: 247px;
   color: #000;
@@ -149,6 +140,11 @@
   /* ナビゲーションPC用ここから */
   #button {
     display: none;
+  }
+
+  .nav {
+    position: static;
+    z-index: auto;
   }
 
   .menuList {
