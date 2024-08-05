@@ -33,6 +33,11 @@ h1 img {
 }
 
 /* 紹介 */
+.intro {
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
 #cont1 {
     background: url(../image/top_formosa01.jpg) top left/cover;
 }
@@ -49,35 +54,34 @@ h1 img {
     text-align: center;
 }
 
-.flag {
-    margin-bottom: 40px;
-}
-
-p.flag img {
+img.flag {
     width: 35px;
     height: 24px;
-    margin: 0 auto;
+    margin: 0 auto 40px;
+}
+
+.intro_cont {
+    text-align: center;
+    padding-bottom: 60px;
 }
 
 .intro_title {
     font-size: 20px;
     margin: 0 auto 20px;
-
 }
 
 .intro_subtitle {
     font-size: 12px;
     display: inline-block;
-    margin: 0 auto;
     padding-bottom: 12px;
     border-bottom: 1px solid #000;
 }
 
 .formosa_img {
+    display: block;
     width: 335px;
     height: 180px;
-    margin: 20px auto 60px;
-    object-fit: cover;
+    margin: 20px auto 0;
 }
 
 /* 共通 p*/
@@ -90,6 +94,10 @@ p.lead {
     font-size: 12px;
     line-height: 19.2px;
     text-align: left;
+}
+
+.intro_cont p.lead {
+    margin: 0;
 }
 
 /* Gallery */
@@ -132,6 +140,10 @@ p.lead {
     position: relative;
 }
 
+.map a {
+    display: block;
+}
+
 .map img {
     width: 194.29px;
     display: block;
@@ -147,6 +159,7 @@ p.lead {
     top: 22.86px;
     right: 0;
 }
+
 
 #taichung {
     position: absolute;
@@ -246,13 +259,14 @@ dd {
 /* PC版 ここから*/
 @media screen and (min-width:600px) {
 
-    /* Header */
+    /* Header PC*/
     .hero {
         max-width: 1366px;
         height: 768px;
         background: url(../image/top_bg_sp.jpg) top center/cover;
         padding: 0;
         align-items: center;
+        margin: 0 auto;
     }
 
     h1 img {
@@ -261,28 +275,215 @@ dd {
         height: 100%;
     }
 
-    /* Formosa */
+    /* Formosa PC*/
     .intro_cont {
+        max-width: 1200px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
         padding: 80px 20px;
+        height: 458px;
+    }
+
+    #cont1,
+    #cont2 {
+        padding: 0;
     }
 
     .cont_inner {
-        width: 420px;
-        height: 298px;
+        max-width: 517px;
+        width: 100%;
+        max-height: 298px;
+        height: auto;
+        /* padding-top: 30px; */
+        padding-left: 20px;
     }
 
-    .image_box {
-        width: 636px;
-        height: 298px;
+    img.flag {
+        display: inline-block;
+        width: 28%;
+        max-width: 117px;
+        height: auto;
+        margin: 30px auto 14%;
+        /* width: 8.565vw;
+        height: 5.71vw; */
+    }
+
+    .intro_title {
+        font-size: clamp(1.25rem, calc(0.53rem + 2.89vw), 3rem);
+        text-align: left;
+    }
+
+    .intro_subtitle {
+        font-size: clamp(0.75rem, calc(0.23rem + 2.07vw), 2rem);
+        border: none;
+        display: block;
+        text-align: left;
+        margin: 0;
     }
 
     .formosa_img {
-        width: 636px;
-        height: 298px;
+        width: 47vw;
+        max-width: 636px;
+        height: auto;
+        margin: 0;
     }
 
+    /* 共通 p PC*/
+    p.lead {
+        width: 420px;
+        height: 100%;
+        margin: 0 auto;
+        padding: 20px 0;
+        border-top: #000 solid 1px;
+        border-bottom: #000 solid 1px;
+        font-size: 20px;
+        line-height: 32px;
+        text-align: left;
+    }
+
+    /* コンテンツ最大幅1200px */
+    .innerwrap {
+        margin: 0 20px;
+    }
+
+    /* GalleryPC */
+    .gallery h2.common {
+        margin-left: 0;
+    }
+
+    .indicator li {
+        position: relative;
+        width: 28px;
+        height: 28px;
+    }
+
+    .indicator li:first-child::before {
+        content: "";
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        background-color: #7a7a7a;
+        position: absolute;
+        left: -100px;
+        top: 10px;
+        transform: translateY(-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .indicator li:first-child::after {
+        content: "";
+        width: 24px;
+        height: 24px;
+        border: 0;
+        border-top: 5px solid #fff;
+        border-left: 5px solid #fff;
+        border-radius: 3px;
+        transform: rotate(-45deg);
+        position: absolute;
+        left: -75px;
+    }
+
+    .indicator li:last-child::before {
+        content: "";
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        background-color: #7a7a7a;
+        position: absolute;
+        right: -100px;
+        top: 10px;
+        transform: translateY(-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .indicator li:last-child::after {
+        content: "";
+        width: 24px;
+        height: 24px;
+        border: 0;
+        border-top: 5px solid #fff;
+        border-right: 5px solid #fff;
+        border-radius: 3px;
+        transform: rotate(45deg);
+        position: absolute;
+        right: -75px;
+    }
+
+    /* Travel PC */
+    .travel h2.common {
+        margin-right: 0;
+    }
+
+    .travel_cont {
+        display: flex;
+        box-sizing: border-box;
+        max-width: 1200px;
+        width: 100%;
+        margin: 80px auto 180px;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .travel .lead {
+        margin-top: 0;
+    }
+
+    .map {
+        width: 30vw;
+        height: auto;
+        position: relative;
+        max-width: 340px;
+    }
+
+    #taiwan_map {
+        width: 100%;
+        height: auto;
+    }
+
+    .map a {
+        position: absolute;
+    }
+
+    .map a img {
+        max-width: 100px;
+        width: 100%;
+        height: auto;
+        border: #000 solid 5px;
+    }
+
+    /* iconの位置を調整↓ */
+    #taipei {
+        right: 10%;
+        top: 10%;
+    }
+
+    #taichung {
+        left: -8%;
+        top: 25%;
+    }
+
+    #tainan {
+        right: 40%;
+        bottom: -5%;
+    }
+
+    /* Event PC */
+    .event h2.common {
+        margin-left: 0;
+    }
+
+    .event_detail {
+        display: grid;
+        grid-template-columns: 580px 420px;
+        grid-template-rows: 20px 1fr;
+    }
 
 
 }
