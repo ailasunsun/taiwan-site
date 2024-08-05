@@ -34,6 +34,12 @@ p {
 }
 
 /* hero */
+
+.miniLogo {
+  width: 111px;
+  margin: 4px 0px 0px 4px;
+}
+
 .hero {
   min-width: 375px;
   background: url(../image/header_sp.jpg) no-repeat center top/cover;
@@ -45,7 +51,7 @@ p {
   margin: auto;
 }
 
-.hero img {
+.hero .title img {
   height: 372px;
   margin: 120px 0 175px;
 }
@@ -181,5 +187,20 @@ time {
   display: none;
 }
 
+/* accsess */
+.access h2 {
+  margin-bottom: 48px;
+}
 
-@media screen and(min-width:1366px) {}
+.access p {
+  text-align: center;
+
+}
+
+
+
+@media screen and (min-width:600px) {
+  .miniLogo {
+    display: none;
+  }
+}
