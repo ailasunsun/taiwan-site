@@ -170,6 +170,8 @@ time {
 
 /* モーダルウィンドウ装飾 */
 .modal_container {
+  /* ドロワーアイコンと競合しないように前面へ */
+  z-index: 99;
   overflow: hidden;
   position: fixed;
   height: 100vh;
@@ -195,13 +197,14 @@ time {
   margin-bottom: 48px;
 }
 
+/* 中央に寄るように後で見直す */
 .access p {
-  left: 50%;
-  transform: translateX(-50%);
+  width: 225px;
+  text-align: center;
   display: inline-block;
   border-bottom: 1px solid #000;
   padding: 0 10.5px 8px;
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
 }
 
 .access dl dt {
@@ -221,14 +224,24 @@ time {
 
   /* 共通PC */
   section,
-  .breadcrumb {
+  .miniNav {
+    width: 100%;
     max-width: 1200px;
     /* 簡易 */
-    background: red;
+    background-color: greenyellow;
+  }
+
+  section {
+    margin-top: 120px;
   }
 
   p {
     font-size: 20px;
+  }
+
+  /* 見出し */
+  section .common {
+    margin-bottom: 80px;
   }
 
   /* header */
@@ -261,13 +274,27 @@ time {
   }
 
   /* パンくずリスト */
-  nav .breadcrumb {
-    /* margin: 8px 0px 4px 8px */
-    margin: auto;
+  .miniNav {
+    margin: 0 auto;
   }
 
-  /* 見出し */
-  /*section .common {
-  margin-bottom: 40px;
-} */
+  .miniNav .breadcrumb {
+    font-size: 20px;
+  }
+
+  /* attraction（観光名所） */
+  .attraction {
+    margin-top: 80px;
+  }
+
+  .attraction .common {
+    margin-left: 20px;
+  }
+
+  .term {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  /* attraction */
 }
