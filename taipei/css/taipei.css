@@ -34,7 +34,6 @@ p {
 }
 
 /* hero */
-
 .miniLogo {
   width: 111px;
   margin: 4px 0px 0px 4px;
@@ -68,7 +67,7 @@ p {
 }
 
 /* パンくずリスト */
-nav {
+nav .breadcrumb {
   margin: 8px 0px 4px 8px
 }
 
@@ -171,6 +170,8 @@ time {
 
 /* モーダルウィンドウ装飾 */
 .modal_container {
+  /* ドロワーアイコンと競合しないように前面へ */
+  z-index: 99;
   overflow: hidden;
   position: fixed;
   height: 100vh;
@@ -188,19 +189,109 @@ time {
 }
 
 /* accsess */
+.access {
+  margin-bottom: 128px;
+}
+
 .access h2 {
   margin-bottom: 48px;
 }
 
 .access p {
-  text-align: center;
-
+  width: 225px;
+  border-bottom: 1px solid #000;
+  padding: 0 10.5px 8px;
+  margin: 0 auto 20px;
 }
 
+.access dl dt {
+  margin: 20px 0 12px;
+}
 
+.access dl dt span {
+  font-weight: normal;
+}
+
+.access dl dt figure {
+  margin-top: 12px;
+  width: 26%;
+}
 
 @media screen and (min-width:600px) {
-  .miniLogo {
-    display: none;
+
+  /* 共通PC */
+  section,
+  .miniNav {
+    width: 100%;
+    max-width: 1200px;
+    /* 簡易 */
+    background-color: greenyellow;
   }
+
+  section {
+    margin-top: 120px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  /* 見出し */
+  section .common {
+    margin-bottom: 80px;
+  }
+
+  /* header */
+  header {
+    background: url(../image/header_pc.jpg) no-repeat center top/cover;
+  }
+
+  /* hero */
+  .hero {
+    margin: 0 auto;
+    background: none;
+    max-width: 1200px;
+  }
+
+  .hero .title {
+    width: 300px;
+    height: 540px;
+    margin: 114px 620px 0px 280px;
+  }
+
+  .hero .title img {
+    width: 300px;
+    height: 540px;
+    margin: 0;
+  }
+
+  .hero p {
+    width: 482px;
+    padding-bottom: 20px;
+  }
+
+  /* パンくずリスト */
+  .miniNav {
+    margin: 0 auto;
+  }
+
+  .miniNav .breadcrumb {
+    font-size: 20px;
+  }
+
+  /* attraction（観光名所） */
+  .attraction {
+    margin-top: 80px;
+  }
+
+  .attraction .common {
+    margin-left: 20px;
+  }
+
+  .term {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  /* attraction */
 }

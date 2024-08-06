@@ -1,10 +1,27 @@
 @charset "UTF-8";
 
-header {
+/* header */
+.head_taichung {
     width: 100%;
+    min-width: 375px;
     max-width: 599px;
     height: 667px;
     background: url(../image_taichung/背景画像.jpg) no-repeat center top/cover;
+    margin-bottom: 100px;
+}
+
+#logo_taichung img {
+    width: 30%;
+    min-width: 111px;
+    height: 45px;
+}
+
+#open {
+    width: 48px;
+    height: 48px;
+    position: fixed;
+    top: 0px;
+    right: 8px;
 }
 
 .taichung_logo {
@@ -12,14 +29,74 @@ header {
 }
 
 .title_img {
-    width: 55%;
-    height: 372px;
     margin: auto;
-    background-color: blueviolet;
+    width: 199px;
+    height: 372px;
 }
 
 .title_img img {
-    width: 55%;
-    max-width: 599px;
     height: 372px;
+    margin: 120px 0 175px;
+}
+
+.titlesub {
+    display: flex;
+    justify-content: right;
+}
+
+.titlesub p {
+    width: 247px;
+    color: #fff;
+    padding-bottom: 8px;
+    font-size: 12px;
+}
+
+
+/* main */
+
+.heading {
+    font-size: 24px;
+    text-align: center;
+}
+
+.headsub {
+    font-size: 16px;
+}
+
+
+h3 {
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+}
+
+.att img {
+    height: 221px;
+    width: 80%;
+    min-width: 295px;
+}
+
+.attsub img {
+    height: 150px;
+    width: 100%;
+    min-width: 295px;
+
+}
+
+.ex {
+    height: 231px;
+    min-width: 295px;
+    width: 100%;
+}
+
+/* museum */
+.mus img {
+    height: 135px;
+    width: 295px;
+}
+
+/* sweets */
+.sweets img {
+    height: 190px;
+    width: 295px;
 }
