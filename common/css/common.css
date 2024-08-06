@@ -190,12 +190,10 @@ h3.modal_name {
     width: 100%;
 }
 
-.log {
-    padding-top: 4px;
-    padding-left: 4px;
-}
+
 
 .log img {
+    margin-top: 8px;
     width: 100px;
 }
 
@@ -205,8 +203,8 @@ h3.modal_name {
 
 .menu-icon {
     position: absolute;
-    right: 4px;
-    top: 4px;
+    right: 8px;
+    top: 8px;
     height: 48px;
     cursor: pointer;
 }
@@ -328,10 +326,9 @@ footer {
         margin: 0px auto;
     }
 
-    .log {
-        height: 56px;
+    .log img {
         width: 140px;
-        margin-left: 20px;
+        margin: 20px 0px 0px 20px;
     }
 
     .lin {
