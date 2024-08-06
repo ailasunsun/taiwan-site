@@ -147,7 +147,7 @@ p.lead {
 
 .map img {
     width: 194.29px;
-    display: block;
+    /* display: block; */
     margin: 0 auto;
 }
 
@@ -155,33 +155,30 @@ p.lead {
     width: 57px;
 }
 
-#taipei {
+#taipei,
+#taichung,
+#tainan {
+    display: block;
     position: absolute;
+}
+
+#taipei {
     top: 22.86px;
     right: 0;
 }
 
 
 #taichung {
-    position: absolute;
     top: 91.43px;
     left: 0;
 }
 
 #tainan {
-    position: absolute;
     right: 102px;
     bottom: 0;
 }
 
 /* Event */
-
-/* grid使用スタイル */
-/* .event_detail1,
-.event_detail2 {
-    display: grid;
-    grid-template-columns: 1fr;
-} */
 h3 {
     font-size: 20px;
     line-height: 32px;
@@ -454,18 +451,17 @@ dd {
 
     .map a {
         position: absolute;
+        width: 10vw;
+        height: auto;
+        max-width: 100px;
     }
 
     .map a img {
-        max-width: 100px;
         width: 100%;
-        height: auto;
+
     }
 
-    /* border: #000 solid 5px;
-
-
-/* iconの位置を調整↓ */
+    /* iconの位置を調整↓ */
     #taipei {
         right: -15%;
         top: 5%;
@@ -543,48 +539,6 @@ dd {
         line-height: 1.6em;
         margin-top: 0;
     }
-
-    /* grid使用スタイル */
-    /* .event_detail1,
-    .event_detail2 {
-        max-width: 1200px;
-        width: 90%;
-        margin: 0 auto 80px;
-        display: grid;
-        grid-template-columns: 53.9% 38.9%;
-        grid-template-columns: 580px 420px;
-        grid-template-rows: auto 1fr;
-        column-gap: 7.2%;
-        column-gap: 80px;
-        place-items: center start;
-    }
-
-    .event_detail2 {
-        margin-bottom: 120px;
-    }
-
-    .item01 {
-        grid-row: 1/2;
-        grid-column: 1/2;
-        padding-bottom: 20px;
-    }
-
-    .item02 {
-        grid-row: 2/4;
-        grid-column: 1/2;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        margin: 0;
-    }
-    .item03 {
-        grid-row: 2/3;
-        grid-column: 2 /3;
-        font-size: 20px;
-        margin: 20px 0;
-        line-height: 2em;
-    } */
-
 
     /* 台湾基本情報 PC */
     .info h2.common {
