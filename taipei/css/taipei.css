@@ -34,7 +34,6 @@ p {
 }
 
 /* hero */
-
 .miniLogo {
   width: 111px;
   margin: 4px 0px 0px 4px;
@@ -197,7 +196,6 @@ time {
 }
 
 .access p {
-  position: relative;
   left: 50%;
   transform: translateX(-50%);
   display: inline-block;
@@ -229,45 +227,46 @@ time {
     background: red;
   }
 
-  /* hero */
-  .hero {
-    border: 3px solid red;
+  p {
+    font-size: 20px;
+  }
+
+  /* header */
+  header {
     background: url(../image/header_pc.jpg) no-repeat center top/cover;
   }
 
-  .herostylepc {
-    max-width: 1200px;
+  /* hero */
+  .hero {
     margin: 0 auto;
+    background: none;
+    max-width: 1200px;
   }
 
-  /* .hero .title {
-    max-width: 1200px;
-    margin: 0px;
-  } */
+  .hero .title {
+    width: 300px;
+    height: 540px;
+    margin: 114px 620px 0px 280px;
+  }
 
-  /* 
-.hero .title img {
-  height: 372px;
-  margin: 120px 0 175px;
-}
+  .hero .title img {
+    width: 300px;
+    height: 540px;
+    margin: 0;
+  }
 
-.description {
-  display: flex;
-  justify-content: right;
-}
-
-.hero p {
-  width: 247px;
-  color: #fff;
-  padding-bottom: 8px;
-} */
+  .hero p {
+    width: 482px;
+    padding-bottom: 20px;
+  }
 
   /* パンくずリスト */
-  /* nav .breadcrumb {
-  margin: 8px 0px 4px 8px
-}
+  nav .breadcrumb {
+    /* margin: 8px 0px 4px 8px */
+    margin: auto;
+  }
 
-/* 見出し */
+  /* 見出し */
   /*section .common {
   margin-bottom: 40px;
 } */

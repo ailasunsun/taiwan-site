@@ -55,4 +55,7 @@ document.getElementById('market_btn4').onclick = function () {
     modalWindow.style.display = 'none';
   }
 };
-
+document.querySelector('.modalButton').onclick = function () {
+  const menuBtn = document.querySelector('.menu-icon');
+  menuBtn.style.display = 'none';
+};
