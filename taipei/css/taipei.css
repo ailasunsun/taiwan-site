@@ -206,7 +206,6 @@ time {
   margin-bottom: 20px;
 }
 
-
 .access dl dt {
   margin: 20px 0 12px;
 }
@@ -221,7 +220,55 @@ time {
 }
 
 @media screen and (min-width:600px) {
-  .miniLogo {
-    display: none;
+
+  /* 共通PC */
+  section,
+  .breadcrumb {
+    max-width: 1200px;
+    /* 簡易 */
+    background: red;
   }
+
+  /* hero */
+  .hero {
+    border: 3px solid red;
+    background: url(../image/header_pc.jpg) no-repeat center top/cover;
+  }
+
+  .herostylepc {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* .hero .title {
+    max-width: 1200px;
+    margin: 0px;
+  } */
+
+  /* 
+.hero .title img {
+  height: 372px;
+  margin: 120px 0 175px;
+}
+
+.description {
+  display: flex;
+  justify-content: right;
+}
+
+.hero p {
+  width: 247px;
+  color: #fff;
+  padding-bottom: 8px;
+} */
+
+  /* パンくずリスト */
+  /* nav .breadcrumb {
+  margin: 8px 0px 4px 8px
+}
+
+/* 見出し */
+  /*section .common {
+  margin-bottom: 40px;
+} */
 }
