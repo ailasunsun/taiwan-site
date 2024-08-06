@@ -1,102 +1,405 @@
 @charset "UTF-8";
 
+* {
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  height: 100vh;
+  max-width: 600px;
+  min-width: 375px;
+}
+
+section {
+  max-width: 600px;
+  margin: 0 auto;
+  width: 79%;
+}
+
+img {
+  width: 100%;
+}
+
+p {
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+/* 共通部分リセット */
+.box {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
 /* header */
-.head_taichung {
-    width: 100%;
-    min-width: 375px;
-    max-width: 599px;
-    height: 667px;
-    background: url(../image_taichung/背景画像.jpg) no-repeat center top/cover;
-    margin-bottom: 100px;
+
+.miniLogo {
+  width: 111px;
+  margin: 4px 0px 0px 4px;
 }
 
-#logo_taichung img {
-    width: 30%;
-    min-width: 111px;
-    height: 45px;
-}
-
-#open {
-    width: 48px;
-    height: 48px;
-    position: fixed;
-    top: 0px;
-    right: 8px;
-}
-
-.taichung_logo {
-    display: flex;
-}
-
-.title_img {
-    margin: auto;
-    width: 199px;
-    height: 372px;
-}
-
-.title_img img {
-    height: 372px;
-    margin: 120px 0 175px;
-}
-
-.titlesub {
-    display: flex;
-    justify-content: right;
-}
-
-.titlesub p {
-    width: 247px;
-    color: #fff;
-    padding-bottom: 8px;
-    font-size: 12px;
+.hero {
+  min-width: 375px;
+  background: url(../image_taichung/背景画像.jpg) no-repeat center top/cover;
 }
 
 
-/* main */
-
-.heading {
-    font-size: 24px;
-    text-align: center;
+.hero .title {
+  width: 199px;
+  margin: auto;
 }
 
-.headsub {
-    font-size: 16px;
+.hero .title img {
+  height: 372px;
+  margin: 120px 0 175px;
+}
+
+.description {
+  display: flex;
+  justify-content: right;
+}
+
+.hero p {
+  width: 247px;
+  color: #fff;
+  padding-bottom: 8px;
+}
+
+/* パンくずリスト */
+nav .breadcrumb {
+  margin: 8px 0px 4px 8px
+}
+
+/* 見出し */
+section .common {
+  margin-bottom: 40px;
+}
+
+/* attraction（観光名所） */
+.attraction {
+  width: 79%;
+  margin: 60px auto;
+}
+
+.attraction p {
+  margin: 20px 0;
+  padding: 20px 16px;
+}
+
+.imageLine {
+  display: flex;
+  justify-content: space-between;
+}
+
+.imageLine img {
+  width: 47%;
+}
+
+.attraction .point {
+  width: 295px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1;
+  padding: 8px 0;
 }
 
 
-h3 {
-    font-weight: bold;
-    font-size: 24px;
-    text-align: center;
+.attraction .point span {
+  display: block;
+  padding-top: 8px;
 }
 
-.att img {
-    height: 221px;
-    width: 80%;
-    min-width: 295px;
+.line {
+  width: 60%;
+  border-bottom: 2px solid #000;
+  margin: 40px auto;
 }
 
-.attsub img {
-    height: 150px;
-    width: 100%;
-    min-width: 295px;
-
+.meisyo {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .ex {
-    height: 231px;
-    min-width: 295px;
-    width: 100%;
+  background: #f3e3de;
+  width: 90%;
+  margin: 20px auto;
+  font-size: 12px;
+  line-height: 19.2px;
+}
+
+.ex2 {
+  background: #f3e3de;
+  width: 90%;
+  margin: 20px auto;
+  font-size: 12px;
+  line-height: 19.2px;
+}
+
+.kugiri {
+  border-top: 1px solid #000;
+  margin: 60px auto;
+  width: 60%;
 }
 
 /* museum */
-.mus img {
-    height: 135px;
-    width: 295px;
+.museum {
+  width: 79%;
+  margin: 60px auto;
 }
 
+.gaiyou {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  width: 220px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.gaiyou p {
+  padding: 12px 0;
+  font-size: 12px;
+  line-height: 19.2px;
+}
+
+.mus {
+  width: 79%;
+  margin: 20px auto;
+}
+
+.mustitle {
+  font-size: 15px;
+  width: 150px;
+  height: 40px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.mussub {
+  font-size: 12px;
+  font-weight: 600px;
+}
+
+.setu {
+  margin: 12px auto;
+}
+
+.setumei {
+  font-size: 12px;
+  line-height: 19.2px;
+}
+
+
+
 /* sweets */
-.sweets img {
-    height: 190px;
-    width: 295px;
+.sweets {
+  width: 356px;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.sweets div {
+  margin-bottom: 20px;
+}
+
+.sweets h3 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sweetsC {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sweetsC p {
+  flex-basis: auto;
+  /* width: 140px; */
+  width: 48%;
+}
+
+/* モーダル共通 */
+
+.modal_container {
+  width: 375px;
+  height: 667px;
+  background-color: #0180BE;
+  position: relative;
+}
+
+#modal_marketbox,
+#mordal_culturalbox {
+  display: none;
+}
+
+.modal_close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+}
+
+h3.modal_name {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.mordal_text {
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #fff;
+  width: 303px;
+  margin: 0 auto;
+}
+
+/* モーダル文化施設ボタン */
+#cultural_btn {
+  display: flex;
+  width: 120px;
+  height: 36px;
+  font-size: 12px;
+  border: 2px solid #0180BE;
+  text-align: center;
+  background-color: transparent;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  margin-left: 215px;
+}
+
+#triangle {
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 7px solid #0180BE;
+  margin-left: 10px;
+}
+
+#cultural_btn img {
+  width: 7px;
+}
+
+/* モーダル文化施設ボタン2 */
+#cultural_btn2 {
+  display: flex;
+  width: 120px;
+  height: 36px;
+  font-size: 12px;
+  border: 2px solid #0180BE;
+  text-align: center;
+  background-color: transparent;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  margin-left: 215px;
+}
+
+#triangle2 {
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 7px solid #0180BE;
+  margin-left: 10px;
+}
+
+#cultural_btn2 img {
+  width: 7px;
+}
+
+/* モーダル文化施設ボタン3 */
+#cultural_btn3 {
+  display: flex;
+  width: 120px;
+  height: 36px;
+  font-size: 12px;
+  border: 2px solid #0180BE;
+  text-align: center;
+  background-color: transparent;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  margin-left: 215px;
+}
+
+#triangle3 {
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 7px solid #0180BE;
+  margin-left: 10px;
+}
+
+#cultural_btn3 img {
+  width: 7px;
+}
+
+/* モーダル文化施設ボタン4 */
+#cultural_btn4 {
+  display: flex;
+  width: 120px;
+  height: 36px;
+  font-size: 12px;
+  border: 2px solid #0180BE;
+  text-align: center;
+  background-color: transparent;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  margin-left: 215px;
+}
+
+#triangle4 {
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 7px solid #0180BE;
+  margin-left: 10px;
+}
+
+#cultural_btn4 img {
+  width: 7px;
+}
+
+/* モーダルウィンドウ　文化施設 */
+.modal_image {
+  width: 295px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal_image img {
+  width: 140px;
+  height: 140px;
+}
+
+.box {
+  margin: 40px;
+  padding: 20px;
+  border: #cdcdcd solid 4px;
+}
+
+.modal_container {
+  display: none;
+}
+
+
+@media screen and (min-width:600px) {
+  .miniLogo {
+    display: none;
+  }
 }
