@@ -15,147 +15,206 @@
 </head>
 
 <body>
-    <section class="hero">
-        <h1><img src="../common/image/logo.png" alt="taiwan_logo"></h1>
-        <p id="icon_drawer"><img src="../common/image/icon_drawer.svg" alt=""></p>
-    </section>
-    <!-- Formosa -->
-    <section class="intro">
-        <div class="intro_bg" id="cont1">
-            <div class="intro_cont">
-                <div class="cont_inner">
-                    <img src="../common/image/flag.jpg" alt="national_flag" class="flag">
-                    <h2 class="intro_title">Formosa</h2>
-                    <h2 class="intro_subtitle">フォルモサ（麗しの島）</h2>
-                </div>
-                <img class="formosa_img" src="image/top_formosa01.jpg" alt="formosa1">
+    <div id="loading">
+        <img src="../common/image/logo.svg" alt="logo" id="logo">
+    </div>
+    <header>
+        <nav class="nav" id="nav">
+            <input type="checkbox" id="menu-btn" class="menu-btn" value="open">
+            <div class="hear">
+
+                <label class="menu-icon" for="menu-btn">
+                    <img src="../common/image/icon_drawer.svg" alt="" id="button">
+                </label>
             </div>
-        </div>
-        <div class="intro_bg" id="cont2">
-            <div class="intro_cont">
-                <p class="lead">フォルモサは、十六世紀にポルトガル人がエメラルド色の美しい台湾を見つけて発した賛嘆の言葉です。緑にあふれた台湾の美しい風景が、あなたを桃源郷の世界へといざなってくれるでしょう。
+
+            <div class="menuList">
+                <p class="log">
+                    <img src="../common/image/logo.svg" alt="" class="menu">
                 </p>
-                <img src="image/top_formosa02.jpg" alt="formosa2" class="formosa_img">
-            </div>
-        </div>
-    </section>
-
-    <!-- Gallery -->
-    <section class="gallery">
-        <div class="innerwrap_top">
-            <h2 class="common">Gallery<span class="subtitle">ギャラリー</span></h2>
-            <div class="slider_container">
-                <div class="slider_image">
-                    <img src="image/top_slider01.jpg" alt="slider1">
-                    <!-- <ul class="slider">
-                        <li><img src="image/top_slider01.jpg" alt="slide1"></li>
-                        <li><img src="image/top_slider02.jpg" alt="slide2"></li>
-                        <li><img src="image/top_slider03.jpg" alt="slide3"></li>
-                        <li><img src="image/top_slider04.jpg" alt="slide4"></li>
-                        <li><img src="image/top_slider05.jpg" alt="slide5"></li>
-                    </ul> -->
-                </div>
-                <div class="slider_indicator">
-                    <ol class="indicator">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ol>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Travel -->
-    <section class="travel">
-        <div class="innerwrap_top">
-            <h2 class="common">Travel<span class="subtitle">おすすめスポット</span></h2>
-            <div class="travel_cont">
-                <p class="lead">
-                    訪れた人々を魅了する「美麗島」台湾。そんな台湾の人気スポットを代表する地を３つのエリアでご紹介します。様々な風景に誰もが魅了されるでしょう。
-                </p>
-                <div class="map">
-                    <img src="image/top_travel04.jpg" alt="taiwan_map" id="taiwan_map">
-                    <a href="../taipei/index.html" id="taipei"><img src="image/top_travel01.png" alt="taipei"></a>
-                    <a href="../taichung/index.html" id="taichung"><img src="image/top_travel02.png" alt="taichung"></a>
-                    <a href="../tainan/index.html" id="tainan"><img src="image/top_travel03.png" alt="tainan"></a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Event -->
-    <section class="event">
-        <div class="innerwrap_top">
-            <h2 class="common">Event<span class="subtitle">おすすめイベント</span></h2>
-            <section class="event_detail1">
-                <h3 class="item01">台湾ランタンフェスティバル</h3>
-                <div class="item00">
-                    <img class="event_img" src="image/top_event01.jpg" alt="event1">
-
-                    <div class="item03">
-                        <p class="date"><span class="bold">開催期間</span><br>春節 旧暦元日（2月24日～3月2日）</p>
-                        <p class="lead">
-                            春節の風習として「天燈」と呼ばれる紙製のランタンに無病息災などの祈りを書き込み、火種を用いて熱気球と同じ原理で空に飛ばす儀式です。吉祥や邪気払いの意味があります。
-                        </p>
-                    </div>
-                </div>
-            </section>
-            <section class="event_detail2">
-
-                <h3 class="item01">台北最High新年城<br>カウントダウンパーティー</h3>
-                <div class="item00">
-                    <img class="event_img" src="image/top_event02.jpg" alt="event2">
-
-                    <div class="item03">
-                        <p class="date"><span class="bold">開催期間</span><br>12月31日～1月1日</p>
-                        <p class="lead">台北101では毎年、元旦0時から約3分間、ビルを覆い尽くすように新年を祝う花火が舞い上がります。世界中から注目されるイベントの一つです。</p>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </section>
-    <!-- Information -->
-    <section class="info">
-        <div class="innerwrap_top">
-            <h2 class="common">台湾基本情報</h2>
-            <div class="info_wrapper">
-                <ul class="basic_info">
-                    <li class="info_list">国名：中華民国・台湾</li>
-                    <li class="info_list">首都：台北</li>
-                    <li class="info_list">人口：約2,300万人</li>
-                    <li class="info_list">面積：約3万6,000km²</li>
-                    <li class="info_list">人種・民族：漢民族、先住民</li>
-                    <li class="info_list">宗教：仏教、道教、キリスト教、その他</li>
-                    <li class="info_list">言語：北京語、台湾語</li>
-                    <li class="info_list">通貨：元（ニュー台湾ドル）</li>
-                    <li class="info_list">時差：1時間</li>
-                    <li class="info_list">台湾の気候・服装：</li>
-                    <li class="list_text">
-                        亜熱帯に属し一年を通して温暖な台湾。しかし北回帰線から南は熱帯で暑く、北部は大陸性気候の影響を受けて冷え込むこともあります。地域差を考慮して服装を準備しましょう。
-                    </li>
-                    <li class="info_list">台湾の祝祭日：</li>
+                <ul class="lin">
+                    <li><a href="../top/index.html">TOP</a></li>
+                    <li><a href="../taipei/index.html">台北</a></li>
+                    <li><a href="../taichung/index.html">台中</a></li>
+                    <li><a href="../tainan/index.html">台南</a></li>
                 </ul>
-                <dl class="holiday">
-                    <dt>正月</dt>
-                    <dd>1月1日</dd>
-                    <dt>端午節</dt>
-                    <dd>6月22日</dd>
-                    <dt>春節</dt>
-                    <dd>1月20日～29日</dd>
-                    <dt>中秋節</dt>
-                    <dd>9月29日</dd>
-                    <dt>平和記念日</dt>
-                    <dd>2月28日</dd>
-                    <dt>国慶節</dt>
-                    <dd>10月10日</dd>
-                    <dt>清明節</dt>
-                    <dd>4月5日</dd>
-                </dl>
             </div>
-        </div>
-    </section>
+        </nav>
+        <section class="hero">
+            <h1><img src="../common/image/logo.png" alt="taiwan_logo"></h1>
+            <!-- <p id="icon_drawer"><img src="../common/image/icon_drawer.svg" alt=""></p> -->
+        </section>
 
+    </header>
+    <main>
+        <!-- Formosa -->
+        <section class="intro">
+            <div class="intro_bg" id="cont1">
+                <div class="intro_cont">
+                    <div class="cont_inner">
+                        <img src="../common/image/flag.jpg" alt="national_flag" class="flag">
+                        <h2 class="intro_title">Formosa</h2>
+                        <h2 class="intro_subtitle">フォルモサ（麗しの島）</h2>
+                    </div>
+                    <img class="formosa_img" src="image/top_formosa01.jpg" alt="formosa1">
+                </div>
+            </div>
+            <div class="intro_bg" id="cont2">
+                <div class="intro_cont">
+                    <p class="lead">
+                        フォルモサは、十六世紀にポルトガル人がエメラルド色の美しい台湾を見つけて発した賛嘆の言葉です。緑にあふれた台湾の美しい風景が、あなたを桃源郷の世界へといざなってくれるでしょう。
+                    </p>
+                    <img src="image/top_formosa02.jpg" alt="formosa2" class="formosa_img">
+                </div>
+            </div>
+        </section>
+        <!-- Gallery -->
+        <section class="gallery">
+            <div class="innerwrap_top">
+                <h2 class="common">Gallery<span class="subtitle">ギャラリー</span></h2>
+                <div class="slider_container">
+                    <div class="slider_item">
+                        <img src="image/top_slider01.jpg" alt="slider1">
+                        <!-- <div id="slide01"><img src="image/top_slider01.jpg" alt="slide01"></div>
+                            <div id="slide02"><img src="image/top_slider02.jpg" alt="slide02"></div>
+                            <div id="slide03"><img src="image/top_slider03.jpg" alt="slide3"></div>
+                            <div id="slide04"><img src="image/top_slider04.jpg" alt="slide4"></div>
+                            <div id="slide05"><img src="image/top_slider05.jpg" alt="slide5"></div> -->
+                    </div>
+                    <div class="slider_indicator">
+                        <ol class="indicator">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Travel -->
+        <section class="travel">
+            <div class="innerwrap_top">
+                <h2 class="common">Travel<span class="subtitle">おすすめスポット</span></h2>
+                <div class="travel_cont">
+                    <p class="lead">
+                        訪れた人々を魅了する「美麗島」台湾。そんな台湾の人気スポットを代表する地を３つのエリアでご紹介します。様々な風景に誰もが魅了されるでしょう。
+                    </p>
+                    <div class="map">
+                        <img src="image/top_travel04.jpg" alt="taiwan_map" id="taiwan_map">
+                        <p id="taipei"><img src="image/top_travel01.png" alt="taipei"></p>
+                        <p id="taichung"><img src="image/top_travel02.png" alt="taichung"></p>
+                        <p id="tainan"><img src="image/top_travel03.png" alt="tainan"></p>
+                        <!-- <a href="../taipei/index.html" id="taipei"><img src="image/top_travel01.png" alt="taipei"></a>
+                        <a href="../taichung/index.html" id="taichung"><img src="image/top_travel02.png" alt="taichung"></a>
+                        <a href="../tainan/index.html" id="tainan"><img src="image/top_travel03.png" alt="tainan"></a> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Event -->
+        <section class="event">
+            <div class="innerwrap_top">
+                <h2 class="common">Event<span class="subtitle">おすすめイベント</span></h2>
+                <section class="event_detail1">
+                    <h3 class="item01">台湾ランタンフェスティバル</h3>
+                    <div class="item00">
+                        <img class="event_img" src="image/top_event01.jpg" alt="event1">
+                        <div class="item03">
+                            <p class="date"><span class="bold">開催期間</span><br>春節 旧暦元日（2月24日～3月2日）</p>
+                            <p class="lead">
+                                春節の風習として「天燈」と呼ばれる紙製のランタンに無病息災などの祈りを書き込み、火種を用いて熱気球と同じ原理で空に飛ばす儀式です。吉祥や邪気払いの意味があります。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section class="event_detail2">
+                    <h3 class="item01">台北最High新年城<br>カウントダウンパーティー</h3>
+                    <div class="item00">
+                        <img class="event_img" src="image/top_event02.jpg" alt="event2">
+                        <div class="item03">
+                            <p class="date"><span class="bold">開催期間</span><br>12月31日～1月1日</p>
+                            <p class="lead">台北101では毎年、元旦0時から約3分間、ビルを覆い尽くすように新年を祝う花火が舞い上がります。世界中から注目されるイベントの一つです。</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <!-- Information -->
+        <section class="info">
+            <div class="innerwrap_top">
+                <h2 class="common">台湾基本情報</h2>
+                <div class="info_wrapper">
+                    <ul class="basic_info">
+                        <li class="info_list">国名：中華民国・台湾</li>
+                        <li class="info_list">首都：台北</li>
+                        <li class="info_list">人口：約2,300万人</li>
+                        <li class="info_list">面積：約3万6,000km²</li>
+                        <li class="info_list">人種・民族：漢民族、先住民</li>
+                        <li class="info_list">宗教：仏教、道教、キリスト教、その他</li>
+                        <li class="info_list">言語：北京語、台湾語</li>
+                        <li class="info_list">通貨：元（ニュー台湾ドル）</li>
+                        <li class="info_list">時差：1時間</li>
+                        <li class="info_list">台湾の気候・服装：</li>
+                        <li class="list_text">
+                            亜熱帯に属し一年を通して温暖な台湾。しかし北回帰線から南は熱帯で暑く、北部は大陸性気候の影響を受けて冷え込むこともあります。地域差を考慮して服装を準備しましょう。
+                        </li>
+                        <li class="info_list">台湾の祝祭日：</li>
+                    </ul>
+                    <dl class="holiday">
+                        <dt>正月</dt>
+                        <dd>1月1日</dd>
+                        <dt>端午節</dt>
+                        <dd>6月22日</dd>
+                        <dt>春節</dt>
+                        <dd>1月20日～29日</dd>
+                        <dt>中秋節</dt>
+                        <dd>9月29日</dd>
+                        <dt>平和記念日</dt>
+                        <dd>2月28日</dd>
+                        <dt>国慶節</dt>
+                        <dd>10月10日</dd>
+                        <dt>清明節</dt>
+                        <dd>4月5日</dd>
+                    </dl>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <footer>
+            <div class="foot">
+                <div class="a">
+                    <p class="flag"><img src="../common/image/flag.jpg" alt=""></p>
+                </div>
+                <div class="b">
+                    <ul class="menu">
+                        <li><a href="../top/index.html">TOP</a></li>
+                        <li><a href="../taipei/index.html">台北</a></li>
+                        <li><a href="../taichung/index.html">台中</a></li>
+                        <li><a href="../tainan/index.html">台南</a></li>
+                        <li><a href="#">当サイトのポリシー</a></li>
+                        <li><a href="#">お問い合わせ</a></li>
+                    </ul>
+                </div>
+                <div class="c">
+                    <ul class="sns">
+                        <li><a href="#"><img src="../common/image/facebook.png" alt=""></a></li>
+                        <li><a href="#"><img src="../common/image/instagram.png" alt=""></a></li>
+                        <li><a href="#"><img src="../common/image/x.png" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="d">
+                    <p id="footer_logo"><img src="../common/image/logo.png" alt=""></p>
+                </div>
+                <div class="e">
+                    <p class="com">Copyright&copy;TAIWAN Traveler</p>
+                </div>
+            </div>
+        </footer>
+
+    </footer>
 
     <script src="../common/js/pagetop.js"></script>
     <script src="../common/js/loading.js"></script>
