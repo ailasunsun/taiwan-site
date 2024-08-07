@@ -34,11 +34,6 @@ p {
 }
 
 /* hero */
-.miniLogo {
-  width: 111px;
-  margin: 4px 0px 0px 4px;
-}
-
 .hero {
   min-width: 375px;
   background: url(../image/header_sp.jpg) no-repeat center top/cover;
@@ -50,10 +45,18 @@ p {
   margin: auto;
 }
 
-.hero .title img {
+.hero .title .taipei {
   height: 372px;
   margin: 120px 0 175px;
 }
+
+.minilogostyle {
+  width: 111px;
+  height: 45px;
+  padding-top: 8px;
+  padding-left: 8px;
+}
+
 
 .description {
   display: flex;
@@ -266,6 +269,10 @@ time {
   }
 
   /* hero */
+  .minilogostyle {
+    display: none;
+  }
+
   .hero {
     margin: 0 auto;
     background: none;
@@ -278,9 +285,10 @@ time {
     margin: 114px 620px 0px 280px;
   }
 
-  .hero .title img {
+  .hero .title .taipei {
     width: 300px;
     height: 540px;
+    object-fit: cover;
     margin: 0;
   }
 

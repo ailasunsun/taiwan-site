@@ -359,6 +359,11 @@ footer {
         font-size: 24px;
     }
 
+    .lin li:hover {
+        margin: 0 20px;
+        font-size: 24px;
+    }
+
     /*共通　見出し*/
     h2.common {
         font-size: 48px;
