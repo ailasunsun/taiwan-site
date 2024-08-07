@@ -147,11 +147,10 @@ p.lead {
 
 .map img {
     width: 194.29px;
-    /* display: block; */
     margin: 0 auto;
 }
 
-.map a img {
+.map p img {
     width: 57px;
 }
 
