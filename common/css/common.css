@@ -240,7 +240,25 @@ h3.modal_name {
     transition: max-height 0.6s;
 }
 
+/* topページ戻るボタンここからSP */
+.topBtn {
+    text-align: end;
+    margin-right: 8px;
+    margin-bottom: 20px;
+}
+
+.topBtn img {
+    text-align: right;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+}
+
+/* topページ戻るボタンここまで */
+
+
 /* footer */
+
 footer {
     height: 420px;
     width: 100%;
@@ -471,4 +489,17 @@ footer {
         text-align: center;
         margin-bottom: 40px;
     }
+
+    /* topページ戻るボタンここからPC */
+    .topBtn {
+        margin-right: 40px;
+        margin-bottom: 60px;
+    }
+
+    .topBtn img {
+        width: 100px;
+        height: 100px;
+    }
+
+    /* topページ戻るボタンここまで */
 }
