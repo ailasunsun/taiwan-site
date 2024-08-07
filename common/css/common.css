@@ -341,35 +341,6 @@ footer {
         font-size: 24px;
     }
 
-    .sns li {
-        max-width: 55px;
-        width: 100%;
-        height: 55px;
-    }
-
-
-    /* class=d */
-    #footer_logo {
-        margin-top: 50px;
-        text-align: center;
-        display: block;
-    }
-
-    #footer_logo img {
-
-        height: 96px;
-        max-width: 240px;
-        width: 100%;
-    }
-
-    /* class=e */
-
-    .com {
-        font-size: 12px;
-        text-align: center;
-        margin-bottom: 40px;
-    }
-
     /*共通　見出し*/
     h2.common {
         font-size: 48px;
@@ -477,14 +448,16 @@ footer {
     }
 
 
+
+
     /* class=d */
-    #logo {
+    #footer_logo {
         margin-top: 50px;
         text-align: center;
         display: block;
     }
 
-    #logo img {
+    #footer_logo img {
 
         height: 96px;
         max-width: 240px;
