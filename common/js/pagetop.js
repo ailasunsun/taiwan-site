@@ -30,8 +30,7 @@ window.addEventListener('scroll', function () {
 
     //footerの高さ
     const footerHeight = footer.offsetHeight;
-    console.log(bodyHeight - scrollPosition - windowHeignt);
-    console.log(footerHeight);
+    // console.log(bodyHeight, scrollPosition, windowHeignt, footerHeight);
 
     if (bodyHeight - scrollPosition - windowHeignt <= footerHeight) {
         topBtn.classList.add('stopTopBtn');
