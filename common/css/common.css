@@ -266,7 +266,7 @@ h3.modal_name {
 
 /* 基準要素用  */
 body {
-    width: 100vw;
+    width: 100%;
     position: relative;
 }
 
