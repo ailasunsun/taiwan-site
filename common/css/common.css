@@ -241,17 +241,35 @@ h3.modal_name {
 }
 
 /* topページ戻るボタンここからSP */
-.topBtn {
-    text-align: end;
-    margin-right: 8px;
-    margin-bottom: 20px;
-}
 
 .topBtn img {
-    text-align: right;
-    border-radius: 50%;
     width: 48px;
     height: 48px;
+}
+
+.topBtn {
+    width: 100%;
+    max-width: 600px;
+    position: fixed;
+    right: 8px;
+    bottom: 20px;
+    text-align: end;
+    z-index: 90;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.appearBtn {
+    opacity: 1;
+}
+
+基準要素用 body {
+    position: relative;
+}
+
+.stopTopBtn {
+    position: absolute;
+    bottom: 440px;
 }
 
 /* topページ戻るボタンここまで */
@@ -260,6 +278,7 @@ h3.modal_name {
 /* footer */
 
 footer {
+    position: relative;
     height: 420px;
     width: 100%;
     min-width: 375px;
@@ -326,6 +345,10 @@ footer {
     }
 
     /* header PC用 */
+    .lin li {
+        text-decoration: none
+    }
+
     #button {
         display: none;
     }
@@ -496,14 +519,19 @@ footer {
     }
 
     /* topページ戻るボタンここからPC */
-    .topBtn {
-        margin-right: 40px;
-        margin-bottom: 60px;
-    }
-
     .topBtn img {
         width: 100px;
         height: 100px;
+    }
+
+    .topBtn {
+        right: 40px;
+        bottom: 60px;
+    }
+
+    .stopTopBtn {
+        position: absolute;
+        bottom: 533px;
     }
 
     /* topページ戻るボタンここまで */
