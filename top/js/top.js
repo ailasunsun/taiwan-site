@@ -22,7 +22,7 @@ const indicator = document.getElementById('indicator');
 const lists = document.querySelectorAll('.indicator_list');
 const totalSlides = lists.length;
 let count = 0;
-// let autoPlayInterval;
+let autoPlayInterval;
 function updateListBackground() {
     for (let i = 0; i < lists.length; i++) {
         lists[i].style.backgroundColor = i === count % totalSlides ? '#000' : '#fff';
@@ -51,11 +51,11 @@ function resetAutoPlayInterval() {
 
 next.addEventListener('click', () => {
     nextClick();
-    // resetAutoPlayInterval();
+    resetAutoPlayInterval();
 });
 prev.addEventListener('click', () => {
     prevClick();
-    // resetAutoPlayInterval();
+    resetAutoPlayInterval();
 });
 indicator.addEventListener('click', (event) => {
     if (event.target.classList.contains('list')) {
@@ -64,7 +64,10 @@ indicator.addEventListener('click', (event) => {
         count = index;
         slide.classList.add(`slide${count % totalSlides + 1}`);
         updateListBackground();
-        // resetAutoPlayInterval();
+        resetAutoPlayInterval();
     }
 });
-// startAutoPlay();
+startAutoPlay();
+
+
+// https://tagnote.net/js-parts/slideshow/#%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%89%E6%9C%AC%E4%BD%93%E3%83%BB%E5%B7%A6%E5%8F%B3%E3%81%AE%E3%83%9C%E3%82%BF%E3%83%B3%E3%83%BB%E3%82%A4%E3%83%B3%E3%82%B8%E3%82%B1%E3%83%BC%E3%82%BF%E3%83%BC
