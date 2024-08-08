@@ -15,9 +15,11 @@
 </head>
 
 <body>
-    <div id="loading">
+    <!-- loading start -->
+    <!-- <div id="loading">
         <img src="../common/image/logo.svg" alt="logo" id="logo">
-    </div>
+    </div> -->
+    <!-- loading end -->
     <header>
         <nav class="nav" id="nav">
             <input type="checkbox" id="menu-btn" class="menu-btn" value="open">
@@ -72,25 +74,29 @@
         <section class="gallery">
             <div class="innerwrap_top">
                 <h2 class="common">Gallery<span class="subtitle">ギャラリー</span></h2>
-                <div class="slider_container">
-                    <div class="slider_item">
-                        <img src="image/top_slider01.jpg" alt="slider1">
-                        <!-- <div id="slide01"><img src="image/top_slider01.jpg" alt="slide01"></div>
-                            <div id="slide02"><img src="image/top_slider02.jpg" alt="slide02"></div>
-                            <div id="slide03"><img src="image/top_slider03.jpg" alt="slide3"></div>
-                            <div id="slide04"><img src="image/top_slider04.jpg" alt="slide4"></div>
-                            <div id="slide05"><img src="image/top_slider05.jpg" alt="slide5"></div> -->
-                    </div>
-                    <div class="slider_indicator">
-                        <ol class="indicator">
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ol>
+                <!-- slide外枠 -->
+                <div class="slide_wrapper">
+                    <div class="slider_item slide1" id="slider_item">
+                        <div id="slide01"><img src="image/top_slider01.jpg" alt="slide01"></div>
+                        <div id="slide02"><img src="image/top_slider02.jpg" alt="slide02"></div>
+                        <div id="slide03"><img src="image/top_slider03.jpg" alt="slide3"></div>
+                        <div id="slide04"><img src="image/top_slider04.jpg" alt="slide4"></div>
+                        <div id="slide05"><img src="image/top_slider05.jpg" alt="slide5"></div>
                     </div>
                 </div>
+                <!-- インジケータ -->
+                <div class="slider_indicator">
+                    <ol class="indicator" id="indicator">
+                        <li id="indicator_prev"></li>
+                        <li class="indicator_list" id="indicator01"></li>
+                        <li class="indicator_list" id="indicator02"></li>
+                        <li class="indicator_list" id="indicator03"></li>
+                        <li class="indicator_list" id="indicator04"></li>
+                        <li class="indicator_list" id="indicator05"></li>
+                        <li id="indicator_next"></li>
+                    </ol>
+                </div>
+
             </div>
         </section>
         <!-- Travel -->
