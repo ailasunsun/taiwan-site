@@ -414,6 +414,9 @@ h3.modal_name {
   display: none;
 }
 
+main {
+  margin-bottom: 140px;
+}
 
 @media screen and (min-width:600px) {
   .miniLogo {
@@ -425,5 +428,31 @@ h3.modal_name {
     width: 100%;
   }
 
+  main {
+    margin-bottom: 200px;
+    width: 90%;
+  }
 
+  section {
+    width: 90%;
+  }
+
+  /* 観光名所 */
+  .meisyo {
+    text-align: left;
+  }
+
+
+
+  .hero {
+    height: 768px;
+    background: url(../image_taichung/pc/背景画像\ \(3\).jpg) no-repeat center top/cover;
+
+  }
+
+
+
+  footer {
+    margin-top: 40px;
+  }
 }
