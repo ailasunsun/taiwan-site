@@ -388,7 +388,9 @@ h3.modal_name {
 
 .buttonsisetu {
   /* margin-left: 64%; */
-  margin-left: 51%;
+  /* margin-left: 51%; */
+  padding-left: 51%;
+  max-width: 599px;
 }
 
 /* モーダルウィンドウ　文化施設 */
@@ -442,33 +444,33 @@ main {
     text-align: left;
   }
 
-  /* .attraction .grid{
-max-width: 1120px;
+  .attraction .grid {
+    max-width: 1120px;
     grid-row: 368px 200px;
     grid-column: 600px 480px;
     row-gap: 20px;
     column-gap: 40px;
   }
 
-  .attractionA{
+  .attractionA {
     grid-row: 1/2;
     grid-column: 1/2;
   }
 
-  .attractionB{
+  .attractionB {
     grid-row: 1/2;
     grid-column: 2/3;
   }
 
-  .attractionC{
+  .attractionC {
     grid-row: 2/3;
     grid-column: 1/2;
   }
 
-  .attractionD{
+  .attractionD {
     grid-row: 2/3;
     grid-column: 2/3;
-  } */
+  }
 
 
   .hero {
