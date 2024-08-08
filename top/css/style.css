@@ -188,7 +188,9 @@ p.lead {
 }
 
 /* Travel */
-f .travel .lead {
+
+
+.travel .lead {
     margin-top: 40px;
 }
 
@@ -313,7 +315,7 @@ dd {
 }
 
 .info {
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
 
 /* PC版 ここから*/
