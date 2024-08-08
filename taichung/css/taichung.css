@@ -442,6 +442,33 @@ main {
     text-align: left;
   }
 
+  /* .attraction .grid{
+max-width: 1120px;
+    grid-row: 368px 200px;
+    grid-column: 600px 480px;
+    row-gap: 20px;
+    column-gap: 40px;
+  }
+
+  .attractionA{
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+
+  .attractionB{
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+
+  .attractionC{
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+
+  .attractionD{
+    grid-row: 2/3;
+    grid-column: 2/3;
+  } */
 
 
   .hero {
