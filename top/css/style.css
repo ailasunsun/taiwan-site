@@ -34,7 +34,8 @@ h1 img {
 
 /* 紹介 */
 .intro {
-    max-width: 1366px;
+    width: 100%;
+    /* max-width: 1366px; */
     margin: 0 auto;
 }
 
@@ -326,7 +327,7 @@ dd {
 
     /* Header PC*/
     .hero {
-        max-width: 1366px;
+        width: 100%;
         height: 768px;
         background: url(../image/top_bg_sp.jpg) top center/cover;
         padding: 0;
@@ -354,6 +355,7 @@ dd {
     #cont1,
     #cont2 {
         padding: 0;
+        width: 100%;
     }
 
     .cont_inner {
