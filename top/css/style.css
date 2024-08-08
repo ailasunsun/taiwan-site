@@ -440,6 +440,7 @@ dd {
         display: flex;
         justify-content: center;
         align-items: center;
+        background-color: #7a7a7a;
     }
 
     #indicator_prev::after {
@@ -464,6 +465,7 @@ dd {
         display: flex;
         justify-content: center;
         align-items: center;
+        background-color: #7a7a7a;
     }
 
     #indicator_next::after {
