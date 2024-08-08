@@ -264,7 +264,8 @@ h3.modal_name {
     opacity: 1;
 }
 
-基準要素用 body {
+/* 基準要素用  */
+body {
     position: relative;
 }
 
