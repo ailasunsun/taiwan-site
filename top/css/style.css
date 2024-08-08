@@ -320,6 +320,9 @@ dd {
 
 /* PC版 ここから*/
 @media screen and (min-width:600px) {
+    .info {
+        margin-bottom: 200px;
+    }
 
     /* Header PC*/
     .hero {
