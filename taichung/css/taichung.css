@@ -419,4 +419,11 @@ h3.modal_name {
   .miniLogo {
     display: none;
   }
+
+  body {
+    max-width: 1200px;
+    width: 100%;
+  }
+
+
 }
