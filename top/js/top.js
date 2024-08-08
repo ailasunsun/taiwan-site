@@ -25,7 +25,8 @@ let count = 0;
 let autoPlayInterval;
 function updateListBackground() {
     for (let i = 0; i < lists.length; i++) {
-        lists[i].style.backgroundColor = i === count % totalSlides ? '#000' : '#fff';
+        lists[i].style.backgroundColor = i === count % totalSlides ? '#000' :
+            '#7a7a7a';
     }
 }
 function nextClick() {
@@ -58,7 +59,7 @@ prev.addEventListener('click', () => {
     resetAutoPlayInterval();
 });
 indicator.addEventListener('click', (event) => {
-    if (event.target.classList.contains('list')) {
+    if (event.target.classList.contains('indicator_list')) {
         const index = Array.from(lists).indexOf(event.target);
         slide.classList.remove(`slide${count % totalSlides + 1}`);
         count = index;
