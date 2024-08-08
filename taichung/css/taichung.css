@@ -447,7 +447,8 @@ main {
   .attraction .grid {
     max-width: 1120px;
     grid-row: 368px 200px;
-    grid-column: 600px 480px;
+    /* grid-column: 600px 480px; */
+    grid-column: 50% 45%;
     row-gap: 20px;
     column-gap: 40px;
   }
