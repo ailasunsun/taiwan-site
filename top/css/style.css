@@ -102,35 +102,93 @@ p.lead {
 } */
 
 /* Gallery */
-.slider_image {
+/* sliderの外枠 */
+.slide_wrapper {
     width: 300px;
     height: 400px;
     margin: 48px auto 20px;
+    overflow: hidden;
 }
 
-.slider_image img {
+/* slideが入ってるとこ　5枚分 */
+.slider_item {
+    width: 500%;
+    height: 100%;
+    display: flex;
+    transition: all 0.3s;
+}
+
+.slider_item div {
+    width: 20%;
+    height: 100%;
+}
+
+.slider_item img {
     width: 100%;
     height: 100%;
 }
+
+/* slide動かすためのクラス クリックでクラス付け替え*/
+.slide1 {
+    transform: translateX(0);
+}
+
+.slide2 {
+    transform: translateX(-20%);
+}
+
+.slide3 {
+    transform: translateX(-40%);
+}
+
+.slide4 {
+    transform: translateX(-60%);
+}
+
+.slide5 {
+    transform: translateX(-80%);
+}
+
+/* indicatorのスタイル */
+.slider_indicator {
+    height: 50px;
+    display: block;
+    z-index: 10;
+    align-items: center;
+}
+
+
 
 .indicator {
     width: 250px;
     margin: 20px auto 60px;
     display: flex;
+    z-index: 20;
     justify-content: space-between;
+
 }
 
-.indicator li {
+.indicator_list {
     display: inline-block;
     width: 18px;
     height: 18px;
     border-radius: 50%;
     background-color: #7a7a7a;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.indicator_list.active {
+    background-color: #000;
+}
+
+#indicator_prev,
+#indicator_next {
+    display: none;
 }
 
 /* Travel */
-
-.travel .lead {
+f .travel .lead {
     margin-top: 40px;
 }
 
@@ -331,7 +389,7 @@ dd {
 
     /* 共通 p PC*/
     p.lead {
-        width: 420px;
+        max-width: 420px;
         height: auto;
         margin: 0;
         padding: 20px 0;
@@ -347,11 +405,20 @@ dd {
         margin: 0 auto;
         max-width: 1200px;
         width: 100%;
+        padding: 0 20px;
     }
 
     /* GalleryPC */
     .gallery h2.common {
         margin-left: 0;
+    }
+
+    .indicator {
+        max-width: 628px;
+        width: 100%;
+        margin: 20px auto 60px;
+        display: flex;
+        justify-content: space-between;
     }
 
     .indicator li {
@@ -360,14 +427,10 @@ dd {
         height: 28px;
     }
 
-    .indicator li:first-child::before {
-        content: "";
+    #indicator_prev {
         width: 64px;
         height: 64px;
         border-radius: 50%;
-        background-color: #7a7a7a;
-        position: absolute;
-        left: -100px;
         top: 10px;
         transform: translateY(-50%);
         display: flex;
@@ -375,27 +438,23 @@ dd {
         align-items: center;
     }
 
-    .indicator li:first-child::after {
+    #indicator_prev::after {
         content: "";
         width: 24px;
         height: 24px;
         border: 0;
-        border-top: 5px solid #fff;
-        border-left: 5px solid #fff;
+        border-top: 6px solid #fff;
+        border-right: 6px solid #fff;
         border-radius: 3px;
-        transform: rotate(-45deg);
+        transform: rotate(-135deg);
         position: absolute;
-        left: -75px;
+        left: 25px;
     }
 
-    .indicator li:last-child::before {
-        content: "";
+    #indicator_next {
         width: 64px;
         height: 64px;
         border-radius: 50%;
-        background-color: #7a7a7a;
-        position: absolute;
-        right: -100px;
         top: 10px;
         transform: translateY(-50%);
         display: flex;
@@ -403,17 +462,17 @@ dd {
         align-items: center;
     }
 
-    .indicator li:last-child::after {
+    #indicator_next::after {
         content: "";
         width: 24px;
         height: 24px;
         border: 0;
-        border-top: 5px solid #fff;
-        border-right: 5px solid #fff;
+        border-top: 6px solid #fff;
+        border-left: 6px solid #fff;
         border-radius: 3px;
-        transform: rotate(45deg);
+        transform: rotate(135deg);
         position: absolute;
-        right: -75px;
+        right: 25px;
     }
 
     /* Travel PC */
