@@ -541,6 +541,7 @@ time {
     margin: 0 auto;
   }
 
+  /* modal */
   .flexmodal {
     display: flex;
     justify-content: space-evenly;
