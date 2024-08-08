@@ -312,6 +312,9 @@ dd {
     width: 75%;
 }
 
+.info {
+    margin-bottom: 200px;
+}
 
 /* PC版 ここから*/
 @media screen and (min-width:600px) {
@@ -390,6 +393,7 @@ dd {
     /* 共通 p PC*/
     p.lead {
         max-width: 420px;
+        width: 100%;
         height: auto;
         margin: 0;
         padding: 20px 0;
@@ -493,6 +497,7 @@ dd {
 
     .travel .lead {
         margin-top: 0;
+        width: 30vw;
     }
 
     .map {
