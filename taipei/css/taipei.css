@@ -479,7 +479,7 @@ time {
   }
 
   .access dl {
-    margin: 0 40px;
+    margin: 0 40px 120px;
   }
 
   .access dl dt,
@@ -505,6 +505,40 @@ time {
   }
 
   /* モーダルPC*/
+  /* h3 .modal_name {
+    font-size: 36px;
+    padding-top: 120px;
+    text-align: left;
+    margin-bottom: 40px;
+  } */
 
+  h3.modal_name {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: left;
+    padding-top: 80px;
+  }
+
+  .flexmodal {
+    display: flex;
+
+    height: 70vh;
+  }
+
+  .modal_container {
+    padding: 0 103px;
+  }
+
+  .mordal_text {
+    width: 45%;
+  }
+
+  .market_time {
+    font-size: 36px;
+  }
+
+  .modal_market {
+    width: 50%;
+  }
 
 }
