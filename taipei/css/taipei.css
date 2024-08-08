@@ -544,7 +544,7 @@ time {
   .flexmodal {
     display: flex;
     justify-content: space-evenly;
-    align-items: middle;
+    align-items: center;
   }
 
   .mordal_text {
