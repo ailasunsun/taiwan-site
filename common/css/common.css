@@ -2,6 +2,7 @@
 
 * {
     font-family: 'Zen Kaku Gothic New', 'Noto Sans JP', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -263,7 +264,8 @@ h3.modal_name {
     opacity: 1;
 }
 
-基準要素用 body {
+/* 基準要素用  */
+body {
     position: relative;
 }
 
